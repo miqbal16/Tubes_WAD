@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>PHPJabbers.com | Free Car Rental Website Template</title>
+		<title>RENTALIN AJA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -17,8 +17,8 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
+								<a href="/index" class="logo">
+									<span class="fa fa-car"></span> <span class="title">RENTALIN AJA!</span>
 								</a>
 
 							<!-- Nav -->
@@ -35,35 +35,34 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="/index">Utama</a></li>
 
-							<li><a href="offers.html">Offers</a></li>
+							<li><a href="/offers">Mobil Dengan Supir</a></li>
 
-							<li><a href="fleet.html">Fleet</a></li>
+							<li><a href="/fleet">Mpbil Tanpa Supir</a></li>
 
 							<li>
-								<a href="#" class="dropdown-toggle">About</a>
+								<a href="#" class="dropdown-toggle">Lainnya</a>
 
 								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="blog.html" class="active">Blog</a></li>
-									<li><a href="testimonials.html">Testimonials</a></li>
-									<li><a href="faq.html">FAQ</a></li>
-									<li><a href="terms.html">Terms</a></li>
+									<li><a href="/about">Tentang</a></li>
+									<li><a href="/team">Kami</a></li>
+									<li><a href="/blog" class="active">Hits Bandung</a></li>
+									<li><a href="/testimonials">Ulasan</a></li>
+									<li><a href="/faq">FAQ</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="/contact">Hubungi Kami</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Blog</h1>
+							<h1>Hits Bandung</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-6-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="images/bandung.jpg" class="img-fluid" alt="" />
 							</div>
 							
 							<div class="container-fluid">
@@ -137,10 +136,9 @@
 						<div class="inner">
 							<section>
 								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.facebook.com/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://twitter.com/" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 
 								&nbsp;

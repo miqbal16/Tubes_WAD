@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>PHPJabbers.com | Free Car Rental Website Template</title>
+		<title>RENTALIN AJA | UTAMA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -17,8 +17,8 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="fa fa-car"></span> <span class="title">CAR RENTAL WEBSITE</span>
+								<a href="/index" class="logo">
+									<span class="fa fa-car"></span> <span class="title">RENTALIN AJA!</span>
 								</a>
 
 							<!-- Nav -->
@@ -35,25 +35,24 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="/index" class="active">Utama</a></li>
 
-							<li><a href="offers.html">Offers</a></li>
+							<li><a href="/offers">Mobil Dengan Supir</a></li>
 
-							<li><a href="fleet.html">Fleet</a></li>
+							<li><a href="/fleet">Mobil Tanpa Supir</a></li>
 
 							<li>
-								<a href="#" class="dropdown-toggle">About</a>
+								<a href="#" class="dropdown-toggle">Lainnya</a>
 
 								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="testimonials.html">Testimonials</a></li>
-									<li><a href="faq.html">FAQ</a></li>
-									<li><a href="terms.html">Terms</a></li>
+									<li><a href="/about">Tentang</a></li>
+									<li><a href="/team">Kami</a></li>
+									<li><a href="/blog">Hits Bandung</a></li>
+									<li><a href="/testimonials">Ulasan</a></li>
+									<li><a href="/faq">FAQ</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="/contact">Hubungi Kami</a></li>
 						</ul>
 					</nav>
 
@@ -92,21 +91,22 @@
 						<div class="inner">
 							<!-- About Us -->
 							<header id="inner">
-								<h1>Rent a car at low prices</h1>
+								<h1>Rentalin aja dulu!</h1>
 								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
 							</header>
 
 							<br>
 
-							<h2 class="h2">Offers</h2>
+							<h2 class="h2">Dengan Supir</h2>
 
-							<!-- Offers -->
+							<!-- Offer -->
+							<!-- DENGAN SUPIR -->
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
 										<img src="images/other-1-720x480.jpg" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="/offers">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -120,7 +120,7 @@
 									<span class="image">
 										<img src="images/other-2-720x480.jpg" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="/offers">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -134,7 +134,7 @@
 									<span class="image">
 										<img src="images/other-3-720x480.jpg" alt="" />
 									</span>
-									<a href="offers.html">
+									<a href="/offers">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -146,19 +146,20 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="offer.html">View Offers &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/offers">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
-							<h2 class="h2">Fleet</h2>
+							<h2 class="h2">Tanpa Supir</h2>
 
 							<!-- Fleet -->
+							<!-- TANPA SUPIR -->
 							<section class="tiles">
 								<article class="style4">
 									<span class="image">
 										<img src="images/other-1-720x480.jpg" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="/fleet">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -175,7 +176,7 @@
 									<span class="image">
 										<img src="images/other-2-720x480.jpg" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="/fleet">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -192,7 +193,7 @@
 									<span class="image">
 										<img src="images/other-3-720x480.jpg" alt="" />
 									</span>
-									<a href="fleet.html">
+									<a href="/fleet">
 										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
 										
 										<p>price from: <strong> $ 140.00</strong> per weekend</p>
@@ -207,11 +208,11 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="fleet.html">View Fleet &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/fleet">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
-							<h2 class="h2">Blog</h2>
+							<h2 class="h2">Hits Bandung</h2>
 							
 							<div class="row">
 								<div class="col-sm-4 text-center">
@@ -239,11 +240,11 @@
 								</div>
 							</div>
 
-							<p class="text-center"><a href="blog.html">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/blog">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
-							<h2 class="h2">Testimonials</h2>
+							<h2 class="h2">Ulasan</h2>
 							
 							<div class="row">
 								<div class="col-sm-6 text-center">
@@ -259,43 +260,13 @@
 								</div>
 							</div>
 
-							<p class="text-center"><a href="testimonials.html">Read More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/testimonials">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 						</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Contact Us</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
-										</div>
-
-										<div class="field">
-											<input type="text" name="subject" id="subject" placeholder="subject" />
-										</div>
-
-										<div class="field">
-											<textarea name="message" id="message" rows="3" placeholder="Notes"></textarea>
-										</div>
-
-										<div class="field text-right">
-											<label>&nbsp;</label>
-
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
 							<section>
 								<h2>Contact Info</h2>
 
@@ -308,16 +279,14 @@
 								<h2>Follow Us</h2>
 
 								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.facebook.com/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://twitter.com/" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
 							</section>
 
 							<ul class="copyright">
 								<li>Copyright © 2020 Company Name </li>
-								<li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
 							</ul>
 						</div>
 					</footer>
