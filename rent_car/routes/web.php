@@ -60,7 +60,12 @@ Route::get('/terms', function () {
 Route::get('/testimonials', function () {
     return view('testimonials');
 });
-
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
 
 
 
