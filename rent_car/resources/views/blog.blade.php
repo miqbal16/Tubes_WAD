@@ -39,7 +39,7 @@
 
 							<li><a href="/offers">Mobil Dengan Supir</a></li>
 
-							<li><a href="/fleet">Mpbil Tanpa Supir</a></li>
+							<li><a href="/fleet">Mobil Tanpa Supir</a></li>
 
 							<li>
 								<a href="#" class="dropdown-toggle">Lainnya</a>
@@ -102,29 +102,6 @@
 											</div>
 										</div>
 									</div>
-
-									<div class="col-3">
-										<div class="form-group">
-				                            <h4>Blog Search</h4>
-				                        </div>
-
-										<div class="form-group">
-				                            <div class="input-group">
-				                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-
-				                                <span class="input-group-addon"><a href="#"><i class="fa fa-search"></i></a></span>
-				                            </div>
-				                        </div>
-
-				                        <br>
-
-				                        <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></p>
-
-				                        <p><a href="#">Non, magni, sequi. Explicabo illum quas debitis ut.</a></p>
-
-				                        <p><a href="#">Vatae expedita deleniti optio ex adipisci . </a></p>
-
-				                        <p><a href="#">Soluta non modi dolorem voluptates dolor laborum.</a></p>
 									</div>
 								</div>
 							</div>
