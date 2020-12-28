@@ -62,41 +62,41 @@
 							<h1>Hits Bandung</h1>
 
 							<div class="image main">
-								<img src="images/bandung.jpg" class="img-fluid" alt="" />
+								<img src="images/blog.jpg" class="img-fluid" alt="" />
 							</div>
-							
+							<p >Berikut merupakan rekomendasi lokasi tempat wisata di Bandung yang dapat kamu kunjungi!</p>
 							<div class="container-fluid">
 								<div class="row">
 									<div class="col-9">
 										<div class="row">
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-1-720x480.jpg" class="img-fluid" alt="" />
+												<img src="images/blog-maribaya.jpg" class="img-fluid" alt="" />
 
-												<h2 class="m-n"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-
-												<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
-											</div>
-
-											<div class="col-sm-6 text-center">
-												<img src="images/blog-2-720x480.jpg" class="img-fluid" alt="" />
-
-												<h2 class="m-n"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+												<h2 class="m-n"><a href="https://www.traveloka.com/id-id/activities/indonesia/product/the-lodge-maribaya-tickets-2001260770103">The Lodge Maribaya</a></h2>
 
 												<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 											</div>
 
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-3-720x480.jpg" class="img-fluid" alt="" />
+												<img src="images/blog-dusunbambu.jpg" class="img-fluid" alt="" />
 
-												<h2 class="m-n"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+												<h2 class="m-n"><a href="https://www.traveloka.com/id-id/hotel/indonesia/dusun-bambu-resort-3000010005406">Dusun Bambu Leisure Park</a></h2>
 
 												<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 											</div>
 
 											<div class="col-sm-6 text-center">
-												<img src="images/blog-3-720x480.jpg" class="img-fluid" alt="" />
+												<img src="images/blog-dago.jpg" class="img-fluid" alt="" />
 
-												<h2 class="m-n"><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+												<h2 class="m-n"><a href="https://www.traveloka.com/id-id/activities/indonesia/product/dago-dream-park-tickets-2000359186457">Dago Dream Park</a></h2>
+
+												<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
+											</div>
+
+											<div class="col-sm-6 text-center">
+												<img src="images/blog-deranch.jpg" class="img-fluid" alt="" />
+
+												<h2 class="m-n"><a href="https://www.traveloka.com/id-id/activities/indonesia/product/deranch-lembang-admission-ticket-2000601835843">De'Ranch Lembang</a></h2>
 
 												<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
 											</div>
@@ -106,10 +106,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
 						<div class="inner">
 							<section>
 								<ul class="icons">
@@ -123,7 +123,6 @@
 
 							<ul class="copyright">
 								<li>Copyright © 2020 Company Name </li>
-								<li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
 							</ul>
 						</div>
 					</footer>

@@ -66,13 +66,13 @@
 						  </ol>
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
-						      <img class="d-block w-100" src="images/slider-image-1-1920x700.jpg" alt="First slide">
+						      <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="images/slider-image-2-1920x700.jpg" alt="Second slide">
+						      <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="images/slider-image-3-1920x700.jpg" alt="Third slide">
+						      <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
 						    </div>
 						  </div>
 						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -155,55 +155,59 @@
 							<!-- Fleet -->
 							<!-- TANPA SUPIR -->
 							<section class="tiles">
-								<article class="style4">
+								<article class="style1">
 									<span class="image">
-										<img src="images/other-1-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-xpander.jpg" alt="" />
 									</span>
-									<a href="/fleet">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+									<a href="#footer" class="scrolly">
+										<h2>Xpander</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 400.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
-								<article class="style5">
+								
+								<article class="style2">
 									<span class="image">
-										<img src="images/other-2-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-ayla.png" alt="" />
 									</span>
-									<a href="/fleet">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+									<a href="#footer" class="scrolly">
+										<h2>Ayla</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 200.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran kecil. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
-								<article class="style6">
+								<article class="style3">
 									<span class="image">
-										<img src="images/other-3-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-alphard.jpg" alt="" />
 									</span>
-									<a href="/fleet">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+									<a href="#footer" class="scrolly">
+										<h2>Alphard</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 							</section>
@@ -215,29 +219,23 @@
 							<h2 class="h2">Hits Bandung</h2>
 							
 							<div class="row">
-								<div class="col-sm-4 text-center">
-									<img src="images/blog-1-720x480.jpg" class="img-fluid" alt="" />
+								<div class="col-sm-6 text-center">
+									<img src="images/blog-maribaya.jpg" class="img-fluid" alt="" />
 
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+									<h2 class="m-n"><a href="https://www.traveloka.com/id-id/activities/indonesia/product/the-lodge-maribaya-tickets-2001260770103">The Lodge Maribaya</a></h2>
 
-									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
+									<p> Alya &nbsp;|&nbsp; 12/12/2020</p>
 								</div>
 
-								<div class="col-sm-4 text-center">
-									<img src="images/blog-2-720x480.jpg" class="img-fluid" alt="" />
+								<div class="col-sm-6 text-center">
+								<img src="images/blog-dusunbambu.jpg" class="img-fluid" alt="" />
 
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+								<h2 class="m-n"><a href="https://www.traveloka.com/id-id/hotel/indonesia/dusun-bambu-resort-3000010005406">Dusun Bambu Leisure Park</a></h2>
 
-									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
+									<p> Alya &nbsp;|&nbsp; 12/12/2020</p>
 								</div>
 
-								<div class="col-sm-4 text-center">
-									<img src="images/blog-3-720x480.jpg" class="img-fluid" alt="" />
-
-									<h2 class="m-n"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
-
-									<p> John Doe &nbsp;|&nbsp; 12/06/2020 10:30</p>
-								</div>
+								
 							</div>
 
 							<p class="text-center"><a href="/blog">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>

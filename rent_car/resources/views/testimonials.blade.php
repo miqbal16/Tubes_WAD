@@ -75,7 +75,31 @@
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star"></span>
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet"</em></p>
+									<p class="m-n"><em>"Mobil nyaman dan bersih"</em></p>
+								</div>
+
+								<div class="col-sm-6 text-center">
+									<p><strong>Johnydep</strong> </p>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<p class="m-n"><em>"Rekomen banget ini pokoknya!"</em></p>
+								</div>
+							</div>
+
+							<br>
+
+							<div class="row">
+								<div class="col-sm-6 text-center">
+									<p><strong>JohnThor</strong></p>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<p class="m-n"><em>"Mobil kondisi bagus pelayanannya juga simple"</em></p>
 								</div>
 
 								<div class="col-sm-6 text-center">
@@ -85,7 +109,7 @@
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star"></span>
 									<span class="fa fa-star"></span>
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet"</em></p>
+									<p class="m-n"><em>"Oke lah"</em></p>
 								</div>
 							</div>
 
@@ -93,33 +117,27 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
-
-									<p><strong> - John Doe</strong></p>
+									<p><strong>JohnThor</strong></p>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<p class="m-n"><em>"So far bagus bagus aja recommend nih buat yang mau nyewa mobil secara online gini ga ribet"</em></p>
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
-
-									<p><strong>- John Doe</strong> </p>
+									<p><strong>Johnydep</strong> </p>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<p class="m-n"><em>"Sudah beberapa kali tetap tidak mengecewakan"</em></p>
 								</div>
 							</div>
 
 							<br>
-
-							<div class="row">
-								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
-
-									<p><strong> - John Doe</strong></p>
-								</div>
-
-								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
-
-									<p><strong>- John Doe</strong> </p>
-								</div>
-							</div>
 							<br>
 							<h2>Tambahkan Ulasan</h2>
 								<form method="post" action="#">
@@ -153,6 +171,7 @@
 					<div class="image main">
 						<center>
 						<img src="images/ulasan.png" class="img-fluid" style = "width:30%; margin-top: -15%" alt="">
+						</center>
 					</div>
 
 				<!-- Footer -->

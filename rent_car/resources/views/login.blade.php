@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="assets/css/login.css" rel="stylesheet" media="all">
 
-  <title>Login</title>
+  <title>RENTALIN AJA | MASUK</title>
 </head>
 <body>
   <div class="login-page">
@@ -16,13 +16,13 @@
         <input type="password" placeholder="password"/>
         <input type="text" placeholder="email address"/>
         <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
+        <p class="message">sudah punya akun? <a href="#">Sign In</a></p>
       </form>
       <form class="login-form">
         <input type="text" placeholder="username"/>
         <input type="password" placeholder="password"/>
-        <button>login</button>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
+        <button>LOGIN</button>
+        <p class="message">belum punya akun? <a href="/register">Buat akun disini</a></p>
       </form>
     </div>
   </div>

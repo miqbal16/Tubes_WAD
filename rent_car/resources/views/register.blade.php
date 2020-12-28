@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Au Register Forms by Colorlib</title>
+    <title>RENTALIN AJA | REGISTRASI</title>
 
     <!-- Icons font CSS-->
     <link href="assets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -80,6 +80,8 @@
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit">Submit</button>
                         </div>
+                        <br>
+                        <p class="message">Sudah punya akun? <a href="/login">Masuk</a></p>
                     </form>
                 </div>
             </div>

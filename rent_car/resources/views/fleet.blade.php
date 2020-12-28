@@ -66,110 +66,113 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/product-1-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-xpander.jpg" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Xpander</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 400.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 								
 								<article class="style2">
 									<span class="image">
-										<img src="images/product-2-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-ayla.png" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Ayla</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 200.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran kecil. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/product-3-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-alphard.jpg" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Alphard</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 
 								<article class="style4">
 									<span class="image">
-										<img src="images/product-4-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-hrv.png" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>HR-V</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 300.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 
 								<article class="style5">
 									<span class="image">
-										<img src="images/product-5-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-fortuner.jpg" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Fortuner</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 
 								<article class="style6">
 									<span class="image">
-										<img src="images/product-6-720x480.jpg" alt="" />
+										<img src="images/tanpasupir-camry.png" alt="" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
-										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<p>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-briefcase"></i> 4 &nbsp;&nbsp;
+										<h2>Camry</h2>
+										<p>Harga mulai dari: <strong> Rp. 300.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
 											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A
+											<i class="fa fa-cog"></i> A/M
 										</p>
+										<div class="content">
+											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
+										</div>
 									</a>
 								</article>
 							</section>
@@ -226,8 +229,7 @@
 								</form>
 							<ul class="copyright">
 								<li>Copyright © 2020 Company Name </li>
-								<li>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
-							</ul>
+								</ul>
 						</div>
 					</footer>
 
