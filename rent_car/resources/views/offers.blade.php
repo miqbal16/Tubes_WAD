@@ -66,94 +66,114 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/other-1-720x480.jpg" alt="" />
+										<img src="images/supir_pajero.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Pajero Dakar</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-										<p>
+										<p>Harga mulai dari: <strong> Rp. 1.600.000</strong> per hari
+										<br>
 										<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
 										<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-										<i class="fa fa-cog"></i> A
+										<i class="fa fa-cog"></i> A/M
 										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 								
 								<article class="style2">
 									<span class="image">
-										<img src="images/other-2-720x480.jpg" alt="" />
+										<img src="images/supir_alphard.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Alphard</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.800.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/other-3-720x480.jpg" alt="" />
+										<img src="images/supir_crv.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>CRV</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.000.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 3 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+											</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 3 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 
 								<article class="style4">
 									<span class="image">
-										<img src="images/other-4-720x480.jpg" alt="" />
+										<img src="images/supir-xpander.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Xpander</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.500.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 
 								<article class="style5">
 									<span class="image">
-										<img src="images/other-5-720x480.jpg" alt="" />
+										<img src="images/supir_honda.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Honda Accord</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 2.000.000</strong> per hari
+											<br>
+											<i class="fa fa-user"></i> 3 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											Mobil ini dapat memuat 3 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 
 								<article class="style6">
 									<span class="image">
-										<img src="images/other-5-720x480.jpg" alt="" />
+										<img src="images/supir_livina.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="#footer" class="scrolly">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Grand Livina</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
-										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
-										</div>
+										<p>Harga mulai dari: <strong> Rp. 700.000</strong> per hari
+										<br>
+										<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+										<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+										<i class="fa fa-cog"></i> A/M
+									</p>
+									<div class="content">
+										Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
+									</div>
 									</a>
 								</article>
 							</section>
@@ -167,24 +187,26 @@
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Your Name" />
+											<input type="text" name="name" id="name" placeholder="Nama Anda" />
 										</div>
 
 										<div class="field half">
 											<select name="vehicle-type" id="vehicle-type">
-												<option value="">Select Offer A</option>
-												<option value="">Select Offer B</option>
-												<option value="">Select Offer C</option>
-												<option value="">Select Offer D</option>
+												<option value="">Pajero Dakar</option>
+												<option value="">Alphard</option>
+												<option value="">CRV</option>
+												<option value="">Xpander</option>
+												<option value="">Honda Accord</option>
+												<option value="">Grand Livina</option>
 											</select>
 										</div>
 
 										<div class="field half">
-											<input type="text" name="date-from" id="date-from" placeholder="Pick-up date/time" />
+											<input type="text" name="date-from" id="date-from" placeholder="Tanggal dan waktu penjemputan" />
 										</div>
 
 										<div class="field half">
-											<input type="text" name="date-to" id="date-to" placeholder="Return date/tiem" />
+											<input type="text" name="date-to" id="date-to" placeholder="Tanggal dan waktu kembali" />
 										</div>
 
 										<div class="field half">
@@ -192,11 +214,11 @@
 										</div>
 
 										<div class="field half">
-											<input type="text" name="phone" id="phone" placeholder="Phone" />
+											<input type="text" name="phone" id="phone" placeholder="No. Handphone" />
 										</div>
 
 										<div class="field">
-											<textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
+											<textarea name="message" id="message" rows="3" placeholder="Komen"></textarea>
 										</div>
 
 										<div class="field text-right">

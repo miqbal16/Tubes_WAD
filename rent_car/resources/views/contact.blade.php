@@ -61,8 +61,12 @@
 						<div class="inner">
 							<h1>Hubungi Kami</h1>
 							<span class="image main"><img src="images/maps.jpeg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-						</div>
+							<p>Anda dapat mengujungi kantor Rentalin Aja, dengan alamat sebagai berikut:
+								<br>
+								Jl. Umayah II Blok A3/13, Telkom University 
+								<br>
+								Pada hari Senin s.d Jum'at (tidak termasuk hari libur) Pukul 09.00 - 16.00 WIB, Dengan senang hati Customer Service kami akan membantu Anda.
+							</div>
 					</div>
 
 				<!-- Footer -->
@@ -104,7 +108,7 @@
 								<ul class="alt">
 									<li><span class="fa fa-envelope-o"></span> <a href="#">contact@company.com</a></li>
 									<li><span class="fa fa-phone"></span> +1 333 4040 5566 </li>
-									<li><span class="fa fa-map-pin"></span> 212 Barrington Court New York, ABC 10001 United States of America</li>
+									<li><span class="fa fa-map-pin"></span> Jl. Umayah II Blok A3/13, Telkom University</li>
 								</ul>
 
 								<h2>Ikuti Kami!</h2>

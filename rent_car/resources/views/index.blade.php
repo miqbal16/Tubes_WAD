@@ -66,13 +66,13 @@
 						  </ol>
 						  <div class="carousel-inner">
 						    <div class="carousel-item active">
-						      <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
+						      <img class="d-block w-100" src="images/welcome.jpg" alt="First slide" height="750px">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
+						      <img class="d-block w-100" src="images/welcome2.jpg" alt="Second slide" height="750px">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
+						      <img class="d-block w-100" src="images/welcome3.jpg" alt="Third slide" height="750px">
 						    </div>
 						  </div>
 						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,8 +92,8 @@
 							<!-- About Us -->
 							<header id="inner">
 								<h1>Rentalin aja dulu!</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
+								<p>Rentalin Aja adalah penyedia sewa mobil murah di Bandung. Tersedia Aneka macam unit antara lain : Pajero Dakar, Fortuner, Camry, Ayla, H-RV, Grand Livina, Xpander, Honda Accord, CRV, Alphard. Anda juga bisa memilih ingin menggunakan Unit Matic atau Manual. Di Rentalin Aja anda bisa sewa mobil dengan supir ataupun lepas kunci, mulai dari Harian, Mingguan hingga Bulanan.
+								</header>
 
 							<br>
 
@@ -104,43 +104,55 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/other-1-720x480.jpg" alt="" />
+										<img src="images/supir_pajero.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="/offers">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Pajero Dakar</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.600.000</strong> per hari
+										<br>
+										<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+										<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+										<i class="fa fa-cog"></i> A/M
+										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 								<article class="style2">
 									<span class="image">
-										<img src="images/other-2-720x480.jpg" alt="" />
+										<img src="images/supir_alphard.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="/offers">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>Alphard</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.800.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+										</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/other-3-720x480.jpg" alt="" />
+										<img src="images/supir_crv.jpg" alt="" width="250px" height="250px" />
 									</span>
 									<a href="/offers">
-										<h2>Lorem ipsum dolor sit amet, consectetur</h2>
+										<h2>CRV</h2>
 										
-										<p>price from: <strong> $ 140.00</strong> per weekend</p>
-
+										<p>Harga mulai dari: <strong> Rp. 1.000.000</strong> per hari
+										<br>
+											<i class="fa fa-user"></i> 3 &nbsp;&nbsp;
+											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
+											<i class="fa fa-cog"></i> A/M
+											</p>
 										<div class="content">
-											<p>Vestibulum id est eu felis vulputate hendrerit. Suspendisse dapibus turpis in dui pulvinar imperdiet. Nunc consectetur.</p>
+											<p>Mobil ini dapat memuat 3 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
 										</div>
 									</a>
 								</article>
@@ -246,15 +258,15 @@
 							
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
+									<p class="m-n"><em>"So far bagus bagus aja recommend nih buat yang mau nyewa mobil secara online gini ga ribet"</em></p>
 
-									<p><strong> - John Doe</strong></p>
+									<p><strong> - JohnThor</strong></p>
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p class="m-n"><em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt delectus mollitia, debitis architecto recusandae? Quidem ipsa, quo, labore minima enim similique, delectus ullam non laboriosam laborum distinctio repellat quas deserunt voluptas reprehenderit dignissimos voluptatum deleniti saepe. Facere expedita autem quos."</em></p>
+									<p class="m-n"><em>"Sudah beberapa kali tetap tidak mengecewakan"</em></p>
 
-									<p><strong>- John Doe</strong> </p>
+									<p><strong>- Johnydep</strong> </p>
 								</div>
 							</div>
 
@@ -271,7 +283,7 @@
 								<ul class="alt">
 									<li><span class="fa fa-envelope-o"></span> <a href="#">contact@company.com</a></li>
 									<li><span class="fa fa-phone"></span> +1 333 4040 5566 </li>
-									<li><span class="fa fa-map-pin"></span> 212 Barrington Court New York, ABC 10001 United States of America</li>
+									<li><span class="fa fa-map-pin"></span> Jl. Umayah II Blok A3/13, Telkom University </li>
 								</ul>
 
 								<h2>Follow Us</h2>

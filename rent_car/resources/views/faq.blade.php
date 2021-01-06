@@ -65,24 +65,26 @@
 								<img src="images/banner-image-4-1920x500.jpg" class="img-fluid" alt="" />
 							</div>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet.</p>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Mengapa Saya Harus Menggunakan Rentalin Aja ?</h2>
+							<p>Rentalin Aja adalah wadah daring yang menyediakan segala kebutuhan transportasi. Saat ini layanan yang tersedia di Rentalin Aja diantaranya rental mobil. Anda tidak perlu repot mencari penyedia layanan kemana – mana, karena yang lebih aman, lebih mudah dan lebih terpercaya ada di Rentalin Aja.</p>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Di Kota Manakah Layanan Rentalin Aja Tersedia ?</h2>
+							<p>Saat ini layanan Rentalin Aja tersedia di kota Bandung</p>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Bagaimana Perhitungan Tarif Pada Layanan Rentalin Aja ?</h2>
+							<p>Harga yang tercantum website Rentalin Aja hanya harga untuk penggunaan mobil dalam kota, untuk penggunaan mobil luar kota akan dikenakan biaya tambahan. Harga belum termasuk biaya operasional (Tol, Parkir, Uang Makan Sopir dan lain-lain).</p>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Apakah Menyewa Mobil di Rentalin Aja Dapat Menyewa Mobil Lepas Kunci (Tanpa Driver) ?</h2>
+							<p>Ya, Rentalin Aja ingin menjawab semua kebutuhan Anda dalam keperluan sewa mobil, untuk menyewa mobil lepas kunci Anda diharuskan melengkapi prosedur yang telah ditentukan oleh Nemob yaitu: 
+							   <br>
+							   Anda bersedia untuk dilakukan survey dan melengkapi persyaratan lepas kunci (Foto Copy KTP, SIM, Kartu Keluarga, Rekening Listrik/Telp, Kartu Kredit dan NPWP, ) dan akan dikenakan biaya survey. Minimal pemesanan dan penyewaan mobil lepas kunci adalah 3 hari.</p>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Bagaimana Jika Saya Menggunakan Mobil Yang Di Sewa Melebihi Durasi Yang Seharusnya ?</h2>
+							<p>Anda akan dikenakan biaya overtime sesuai dengan durasi yang telah Anda gunakan biaya overtime adalah 10% dari harga sewa harian dan maksimal overtime adalah 3 jam, apabila melewati 3 jam akan dikenakan biaya sewa full day.</p>
 
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Lorem ipsum dolor sit amet ?</h2>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet.</p>
-						</div>
+							<h2 class="m-n"><i class="fa fa-question-circle"></i> Bagaimana dengan Biaya Sewa yang Telah Dilakukan Jika Saya Membatalkan Pesanan ?</h2>
+							<p>Tidak ada pengembalian dana untuk pembatalan sewa kendaraan</p>
+							</div>
 					</div>
 
 				<!-- Footer -->

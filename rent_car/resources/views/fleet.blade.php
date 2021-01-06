@@ -182,48 +182,50 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-								<h2>Pinjam Sekarang</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Your Name" />
-										</div>
+							<h2>Pinjam Sekarang</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Nama Anda" />
+									</div>
 
-										<div class="field half">
-											<select name="vehicle-type" id="vehicle-type">
-												<option value="">Select Fleet A</option>
-												<option value="">Select Fleet B</option>
-												<option value="">Select Fleet C</option>
-												<option value="">Select Fleet D</option>
-											</select>
-										</div>
+									<div class="field half">
+										<select name="vehicle-type" id="vehicle-type">
+											<option value="">Pajero Dakar</option>
+											<option value="">Alphard</option>
+											<option value="">CRV</option>
+											<option value="">Xpander</option>
+											<option value="">Honda Accord</option>
+											<option value="">Grand Livina</option>
+										</select>
+									</div>
 
-										<div class="field half">
-											<input type="text" name="date-from" id="date-from" placeholder="Pick-up date/time" />
-										</div>
+									<div class="field half">
+										<input type="text" name="date-from" id="date-from" placeholder="Tanggal dan waktu penjemputan" />
+									</div>
 
-										<div class="field half">
-											<input type="text" name="date-to" id="date-to" placeholder="Return date/tiem" />
-										</div>
+									<div class="field half">
+										<input type="text" name="date-to" id="date-to" placeholder="Tanggal dan waktu kembali" />
+									</div>
 
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
-										</div>
+									<div class="field half">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
 
-										<div class="field half">
-											<input type="text" name="phone" id="phone" placeholder="Phone" />
-										</div>
+									<div class="field half">
+										<input type="text" name="phone" id="phone" placeholder="No. Handphone" />
+									</div>
 
-										<div class="field">
-											<textarea name="message" id="message" rows="3" placeholder="Comment"></textarea>
-										</div>
+									<div class="field">
+										<textarea name="message" id="message" rows="3" placeholder="Komen"></textarea>
+									</div>
 
-										<div class="field text-right">
-											<label>&nbsp;</label>
+									<div class="field text-right">
+										<label>&nbsp;</label>
 
-											<ul class="actions">
-												<li><input type="submit" value="Lanjutkan" class="primary" /></li>
-											</ul>
+										<ul class="actions">
+											<li><input type="submit" value="Lanjutkan" class="primary" /></li>
+										</ul>
 										</div>
 									</div>
 								</form>

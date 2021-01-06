@@ -62,57 +62,70 @@
 							<h1>Kami</h1>
 
 							<div class="image main">
-								<img src="images/banner-image-2-1920x500.jpg" class="img-fluid" alt="" />
+								<img src="images/team.jpg" class="img-fluid" alt="" />
 							</div>
 
 							<div class="container">
 								<div class="row">
-									<div class="col-sm-3 text-center">
+									<div class="col-sm-2 text-center">
 										<img src="images/author-image-1-646x680.jpg" class="img-fluid" alt="" />
 
-										<h2 class="m-n">John Noe</h2>
+										<h2 class="m-n">Muhammad Iqbal</h2>
 
 										<p>
-											CEO <br>
+											Project Manager <br>
 
 											<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
 											<a href="#"><i class="fa fa-linkedin"></i></a>
 										</p>
 									</div>
 
-									<div class="col-sm-3 text-center">
+									<div class="col-sm-2 text-center">
 										<img src="images/author-image-2-646x680.jpg" class="img-fluid" alt="" />
 
-										<h2 class="m-n">Jane Doe</h2>
+										<h2 class="m-n">Tasya Nozuka</h2>
 
 										<p>
-											Customer Support <br>
+											System Analyst <br>
 
 											<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
 											<a href="#"><i class="fa fa-linkedin"></i></a>
 										</p>
 									</div>
 
-									<div class="col-sm-3 text-center">
+									<div class="col-sm-2 text-center">
 										<img src="images/author-image-3-646x680.jpg" class="img-fluid" alt="" />
 
-										<h2 class="m-n">Merry Smith</h2>
+										<h2 class="m-n">Faizal Hudya</h2>
 
 										<p>
-											Social Media <br>
+											Programmer <br>
 
 											<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
 											<a href="#"><i class="fa fa-linkedin"></i></a>
 										</p>
 									</div>
 
-									<div class="col-sm-3 text-center">
+									<div class="col-sm-2 text-center">
 										<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
 
-										<h2 class="m-n">Jack Dawn</h2>
+										<h2 class="m-n">Alya Arifah</h2>
 
 										<p>
-											Social Media <br>
+											Web Developer <br>
+
+											<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</p>
+									</div>
+
+									<div class="col-sm-2 text-center">
+										<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
+
+										<h2 class="m-n">Arya Bimo Bagas</h2>
+
+										<p>
+											Database Developer <br>
 
 											<a href="#"><i class="fa fa-twitter"></i></a> &nbsp;
 											<a href="#"><i class="fa fa-linkedin"></i></a>
