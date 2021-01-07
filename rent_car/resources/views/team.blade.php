@@ -37,9 +37,10 @@
 					<ul>
 						<li><a href="/index">Utama</a></li>
 
-						<li><a href="/offers">Mobil Dengan Supir</a></li>
+						
+						<li><a href="/mobil_dengan_supir">Mobil Dengan Supir</a></li>
 
-						<li><a href="/fleet">Mobil Tanpa Supir</a></li>
+						<li><a href="/mobil_tanpa_supir">Mobil Tanpa Supir</a></li>
 
 						<li>
 							<a href="#" class="dropdown-toggle">Lainnya</a>
@@ -68,7 +69,7 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-2 text-center">
-										<img src="images/author-image-1-646x680.jpg" class="img-fluid" alt="" />
+										<img src="images/iqbal.jpg" class="img-fluid" alt="" width="646px" height="680px">
 
 										<h2 class="m-n">Muhammad Iqbal</h2>
 
@@ -81,7 +82,7 @@
 									</div>
 
 									<div class="col-sm-2 text-center">
-										<img src="images/author-image-2-646x680.jpg" class="img-fluid" alt="" />
+										<img src="images/tasya.png" class="img-fluid" alt="" width="646px" height="680px">
 
 										<h2 class="m-n">Tasya Nozuka</h2>
 
@@ -94,7 +95,7 @@
 									</div>
 
 									<div class="col-sm-2 text-center">
-										<img src="images/author-image-3-646x680.jpg" class="img-fluid" alt="" />
+										<img src="images/faizal.jpg" class="img-fluid" alt="" width="646px" height="680px">
 
 										<h2 class="m-n">Faizal Hudya</h2>
 
@@ -107,7 +108,7 @@
 									</div>
 
 									<div class="col-sm-2 text-center">
-										<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
+										<img src="images/Alya.png" class="img-fluid" alt="" width="646px" height="680px">
 
 										<h2 class="m-n">Alya Arifah</h2>
 
@@ -120,7 +121,7 @@
 									</div>
 
 									<div class="col-sm-2 text-center">
-										<img src="images/author-image-4-646x680.jpg" class="img-fluid" alt="" />
+										<img src="images/bimo.jpg" class="img-fluid" alt="" width="646px" height="680px" >
 
 										<h2 class="m-n">Arya Bimo Bagas</h2>
 

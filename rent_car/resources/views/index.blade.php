@@ -37,9 +37,9 @@
 						<ul>
 							<li><a href="/index" class="active">Utama</a></li>
 
-							<li><a href="/offers">Mobil Dengan Supir</a></li>
+							<li><a href="/mobil_dengan_supir">Mobil Dengan Supir</a></li>
 
-							<li><a href="/fleet">Mobil Tanpa Supir</a></li>
+							<li><a href="/mobil_tanpa_supir">Mobil Tanpa Supir</a></li>
 
 							<li>
 								<a href="#" class="dropdown-toggle">Lainnya</a>
@@ -106,7 +106,7 @@
 									<span class="image">
 										<img src="images/supir_pajero.jpg" alt="" width="250px" height="250px" />
 									</span>
-									<a href="/offers">
+									<a href="/mobil_dengan_supir">
 										<h2>Pajero Dakar</h2>
 										
 										<p>Harga mulai dari: <strong> Rp. 1.600.000</strong> per hari
@@ -124,7 +124,7 @@
 									<span class="image">
 										<img src="images/supir_alphard.jpg" alt="" width="250px" height="250px" />
 									</span>
-									<a href="/offers">
+									<a href="/mobil_dengan_supir">
 										<h2>Alphard</h2>
 										
 										<p>Harga mulai dari: <strong> Rp. 1.800.000</strong> per hari
@@ -142,7 +142,7 @@
 									<span class="image">
 										<img src="images/supir_crv.jpg" alt="" width="250px" height="250px" />
 									</span>
-									<a href="/offers">
+									<a href="/mobil_dengan_supir">
 										<h2>CRV</h2>
 										
 										<p>Harga mulai dari: <strong> Rp. 1.000.000</strong> per hari
@@ -158,7 +158,7 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="/offers">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/mobil_dengan_supir">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 
@@ -224,7 +224,7 @@
 								</article>
 							</section>
 
-							<p class="text-center"><a href="/fleet">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+							<p class="text-center"><a href="/mobil_tanpa_supir">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
 
 							<br>
 

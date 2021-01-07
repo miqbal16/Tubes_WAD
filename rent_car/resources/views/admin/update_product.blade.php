@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Insert Product</title>
+    <title>Update</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
@@ -39,23 +39,26 @@
       </div>
     </nav>
 
+
       {{-- content --}}
       
       <div class="container">
-        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Input Product</h2>
+        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Update Product</h2>
         <div class="row">
           <div class="col-sm-10" style="margin:auto">
-          <form action="{{route('product.storeProduct')}}" method="post">
+            <form action="{{url("/product/{$product->id}")}}" method="post">
+              @method('PATCH')
               {{ csrf_field() }}
                 <div class="form-group">
                   <label for="disabledTextInput">Product Name</label>
-                  <input type="text" id="disabledTextInput" class="form-control" name="name_product">
+                  <input value="{{$product->name}}" type="text" id="disabledTextInput" class="form-control" name="name_product">
                 </div>
 
                 <div class="form-group">
                   <label for="disabledTextInput">No Polisi</label>
-                  <input type="text" id="disabledTextInput" class="form-control" name="no_polisi">
+                  <input value="{{$product->no_polisi}}" type="text" id="disabledTextInput" class="form-control" name="no_polisi">
                 </div>
+
 
                 <div class="mb-3">
                   <label for="disabledTextInput">Price</label>
@@ -63,38 +66,37 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="validatedInputGroupPrepend">Rp</span>
                     </div>
-                    <input type="number" class="form-control" name="price" aria-describedby="validatedInputGroupPrepend" required>
+                    <input value="{{$product->price}}" type="number" class="form-control" name="price" aria-describedby="validatedInputGroupPrepend" required>
                   </div>
                 </div>
 
-            
                 <div class="form-group">
                   <label for="disabledTextInput">Status</label>
-                  <select name="status" class="custom-select mr-sm-2" id="inlineFormCustomSelect" >
-                    <option selected value="Tanpa Driver">Tanpa Driver</option>
+                  <select name="status" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option value="Tanpa Driver">Tanpa Driver</option>
                     <option value="Pakai Driver">Pakai Driver</option>
                   </select>
                 </div>
-                
+
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3">{{$product->description}}</textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Isi Penumpang</label>
-                  <input type="number" name="isi_penumpang" class="form-control" id="exampleFormControlInput1" style="width: 300px">
+                  <input value="{{$product->isi_penumpang}}" type="number" name="isi_penumpang" class="form-control" id="exampleFormControlInput1" style="width: 300px">
                 </div>
 
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Pintu</label>
-                  <input type="number" name="pintu" class="form-control" id="exampleFormControlInput1" style="width: 300px">
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Tahun</label>
-                  <input type="number" name="tahun" class="form-control" id="exampleFormControlInput1" style="width: 300px">
+                  <input value="{{$product->pintu}}" type="number" name="pintu" class="form-control" id="exampleFormControlInput1" style="width: 300px">
                 </div>
                 
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Tahun</label>
+                  <input value="{{$product->tahun}}" type="number" name="tahun" class="form-control" id="exampleFormControlInput1" style="width: 300px">
+                </div>
+
                 <div class="form-group">
                   <label style="display: block" for="exampleFormControlInput1">Image</label>
                   <input type="file" name="file_img">

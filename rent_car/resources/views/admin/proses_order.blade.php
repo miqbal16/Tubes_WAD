@@ -8,14 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Insert Product</title>
+    <title>Order</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
     }
     </style>
+    
   </head>
-
   <body>
     
     {{-- navbar --}}
@@ -38,74 +38,62 @@
         </ul>
       </div>
     </nav>
-
-      {{-- content --}}
+      {{-- card --}}
+      
       
       <div class="container">
-        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Input Product</h2>
+        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Order</h2>
         <div class="row">
-          <div class="col-sm-10" style="margin:auto">
-          <form action="{{route('product.storeProduct')}}" method="post">
-              {{ csrf_field() }}
-                <div class="form-group">
-                  <label for="disabledTextInput">Product Name</label>
-                  <input type="text" id="disabledTextInput" class="form-control" name="name_product">
-                </div>
-
-                <div class="form-group">
-                  <label for="disabledTextInput">No Polisi</label>
-                  <input type="text" id="disabledTextInput" class="form-control" name="no_polisi">
-                </div>
-
-                <div class="mb-3">
-                  <label for="disabledTextInput">Price</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="validatedInputGroupPrepend">Rp</span>
+            <div class="card mb-3" style="max-width: 1000px; margin: auto">
+                <div class="row no-gutters">
+                  <div class="col-md-7">
+                    <img src="{{asset('img/sepatu.jpg')}}" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card-body">
+                    <h5 class="card-title">{{$order->name}}</h5>
+                      <p class="card-text">{{$order->description}}</p>
+                      <p class="card-text">Stock: {{$order->stock}}</p>
+                      <h3 class="card-text">${{$order->price}}.00</h3>
                     </div>
-                    <input type="number" class="form-control" name="price" aria-describedby="validatedInputGroupPrepend" required>
                   </div>
                 </div>
+              </div>
 
-            
-                <div class="form-group">
-                  <label for="disabledTextInput">Status</label>
-                  <select name="status" class="custom-select mr-sm-2" id="inlineFormCustomSelect" >
-                    <option selected value="Tanpa Driver">Tanpa Driver</option>
-                    <option value="Pakai Driver">Pakai Driver</option>
-                  </select>
-                </div>
-                
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Description</label>
-                  <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Isi Penumpang</label>
-                  <input type="number" name="isi_penumpang" class="form-control" id="exampleFormControlInput1" style="width: 300px">
-                </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Pintu</label>
-                  <input type="number" name="pintu" class="form-control" id="exampleFormControlInput1" style="width: 300px">
+              <div class="card mb-3" style="max-width: 1000px; margin: auto">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <h2 class="title" style="text-align:center; font-size: 23px; margin: 13px 0 5px; color: #555555">Buyer Information</h2>
+                        <div class="card-body" style="width: 1000px;margin: auto">
+                            <div class="box" style="width: 958px">
+                                
+                                <form action="/order/buy" method="post">
+                                  {{ csrf_field() }}
+                                  <input name="product_id" type="hidden" value="{{$order->id}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Name</label>
+                                      <input name="buyer_name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Contact</label>
+                                      <input name="buyer_contact" type="tel" class="form-control" id="exampleInputPassword1" placeholder="Contact">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Quantity</label>
+                                      <input name="quantity" type="number" class="form-control" id="exampleCheck1" placeholder="Quantity" style="width: 300px">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                  </form>
+                            </div>
+                        </div>
+                      </div>
                 </div>
+              </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Tahun</label>
-                  <input type="number" name="tahun" class="form-control" id="exampleFormControlInput1" style="width: 300px">
-                </div>
-                
-                <div class="form-group">
-                  <label style="display: block" for="exampleFormControlInput1">Image</label>
-                  <input type="file" name="file_img">
-                </div>
-                <button type="submit" name="submit" class="btn btn-dark">Submit</button>
-            </form>
-          </div>
         </div>
       </div>
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 

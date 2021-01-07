@@ -41,12 +41,12 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-Route::get('/fleet', function () {
-    return view('fleet');
+Route::get('/mobil_tanpa_supir', function () {
+    return view('mobil_tanpa_supir');
 });
 
-Route::get('/offers', function () {
-    return view('offers');
+Route::get('/mobil_dengan_supir', function () {
+    return view('mobil_dengan_supir');
 });
 
 Route::get('/team', function () {
@@ -69,22 +69,18 @@ Route::get('/register', function () {
 
 /*..............Admin Land..................*/
 
-Route::get('home', function () {
-    return view('admin.home');
+Route::get('/car_list', '\App\Http\Controllers\ProductController@productPage')->name('product.productPage');
 
-});
+Route::get('/car_list/InsertProduct', '\App\Http\Controllers\ProductController@insertProductPage');
+Route::get('/car_list/{id}/UpdateProduct', '\App\Http\Controllers\ProductController@updateProductPage')->name('product.update.page');
+Route::patch('/car_list/{id}', '\App\Http\Controllers\ProductController@update')->name('product.update');
+Route::post('/car_list','\App\Http\Controllers\ProductController@storeProduct')->name('product.storeProduct');
+Route::post('/car_list/delete','\App\Http\Controllers\ProductController@delete')->name('product.delete');
 
-Route::get('main', function () {
-    return view('admin.main');
+Route::view('/admin', 'admin.home');
 
-});
+Route::get('ulasan','\App\Http\Controllers\OrderController@index')->name('order.page');
 
-Route::get('product', 'App\Http\Controllers\ProductController@data');
-
-Route::get('order', 'App\Http\Controllers\OrderController@data');
-
-Route::get('history', 'App\Http\Controllers\HistoryController@data');
-
-Route::get('/insert_product', function () {
-    return view('admin.insert_product');
-});
+Route::get('/order/{id}/ProsesOrder', '\App\Http\Controllers\OrderController@prosesOrder')->name('order.proses.page');
+Route::post('/order/buy', '\App\Http\Controllers\OrderController@buy')->name('order.success');
+Route::get('/history', '\App\Http\Controllers\OrderController@history')->name('history.page');

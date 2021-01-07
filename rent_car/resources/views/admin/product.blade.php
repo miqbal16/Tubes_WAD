@@ -8,13 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Admin Page</title>
+    <title>Product</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
     }
     </style>
-    
   </head>
   <body>
     
@@ -42,15 +41,75 @@
 
       {{-- content --}}
       
+      @if ($product->count() > 0)
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h1 style="text-align: center; line-height: 500px; color: salmon">WELCOME TO ADMIN PAGE</h1>
-          </div>
+            <h2 class="title" style="text-align:center; font-size: 26px; margin: 30px 0 40px; color: #555555">List Car</h2>
+            <button type="submit" onclick="location.href='/car_list/InsertProduct'" value="/product/InsertProduct" style="margin-bottom: 20px;" class="btn btn-dark">Add Car</button>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Isi Penumpang</th>
+                <th scope="col">Pintu</th>
+                <th scope="col">No Polisi</th>
+                <th scope="col">Tahun</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <?php $number = 1; ?>
+            <tbody>
+              @foreach ($product as $pro)
+              <tr>
+                <th scope="row">{{$number}}</th>
+                <td>{{$pro->name}}</td>
+                <td>Rp.{{$pro->price}}</td>
+                <td>{{$pro->isi_penumpang}}</td>
+                <td>{{$pro->pintu}}</td>
+                <td>{{$pro->no_polisi}}</td>
+                <td>{{$pro->tahun}}</td>
+                <td>{{$pro->status}}</td>
+                <td>
+                  <div class="box" style="display: flex; justify-align: center;">
+                    <a href="{{url("product/{$pro->id}/UpdateProduct")}}" class="btn btn-primary" style="margin-right: 10px">Edit</a>
+                    <form action="{{route('product.delete')}}" method="post">
+                      @csrf
+                      <input type="hidden" value="{{$pro->id}}" name="id" class="btn btn-primary">
+                      <button class="btn btn-danger">Delete</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <?php $number += 1; ?>    
+              @endforeach
+              
+            </tbody>
+          </table>
         </div>
+      @else
+      <div class="col-sm">
+        <p style="text-align:center; margin:40px 0 0">There is no data...</p>
+        <button type="submit" onclick="location.href='/product/InsertProduct'" value="/product/InsertProduct" class="btn btn-dark" style="margin:20px auto 0; display:block;">Add Product</button>
       </div>
+      @endif
+      
+          
+      
+          
 
-  
+        </div>
+      </div>    
+      
+      
+      
+      {{-- table --}}
+    
+      
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->

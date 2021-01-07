@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Admin Page</title>
+    <title>Order</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
@@ -39,19 +39,42 @@
       </div>
     </nav>
 
-
-      {{-- content --}}
-      
+      {{-- card --}}
+      {{-- @if ($order->count() > 0)
       <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h1 style="text-align: center; line-height: 500px; color: salmon">WELCOME TO ADMIN PAGE</h1>
-          </div>
+        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">ULASAN</h2>
+        <div class="row row-cols-1 row-cols-md-3">
+          @foreach ($order as $or)
+          <div class="col mb-4">
+              <div class="card" style="width: 20rem;">
+                <img src="{{asset('img/sepatu.jpg')}}" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">{{$or->name}}</h5>
+              <p class="card-text">{{$or->description}}</p>
+              @if ($or->stock == 0)
+                  
+              <h3 style="color: green">No Stock</h3>
+              @else
+                  
+              <h3 style="color: green">${{$or->price}}.00</h3>
+              @endif    
+            
+              <a href="{{url("order/{$or->id}/ProsesOrder")}}" class="btn btn-success">Order Now</a>
+            </div>
+          </div>    
+            </div>
+          @endforeach
         </div>
+      </div>    
+      @else
+      <div class="col-sm">
+        <p style="text-align:center; margin:40px 0 0">There is no data...</p>
+        <button type="submit" onclick="location.href='/product/InsertProduct'" value="/product/InsertProduct" class="btn btn-dark" style="margin:20px auto 0; display:block;">Add Product</button>
       </div>
+      @endif --}}
+      
 
-  
-
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 

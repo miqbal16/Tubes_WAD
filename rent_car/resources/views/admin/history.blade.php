@@ -8,13 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Admin Page</title>
+    <title>History</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
     }
     </style>
-    
   </head>
   <body>
     
@@ -42,15 +41,61 @@
 
       {{-- content --}}
       
+      @if ($order->count() > 0)
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h1 style="text-align: center; line-height: 500px; color: salmon">WELCOME TO ADMIN PAGE</h1>
-          </div>
+            <h2 class="title" style="text-align:center; font-size: 26px; margin: 30px 0 40px; color: #555555">History</h2>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product</th>
+                <th scope="col">Buyer Name</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <?php $number = 1; ?>
+            <tbody>
+              @foreach ($order as $or)
+              <tr>
+                <th scope="row">{{$number}}</th>
+                @foreach ($produk as $pro)
+                  @if ($pro->id == $or->product_id)
+                    <td>{{$pro->name}}</td>
+                  @endif      
+                @endforeach
+                <td>{{$or->buyer_name}}</td>
+                <td>{{$or->buyer_contact}}</td>
+                <td>${{$or->amount}}.00</td>
+              </tr>
+              <?php $number += 1; ?>    
+              @endforeach
+              
+            </tbody>
+          </table>
         </div>
+      @else
+      <div class="col-sm">
+        <p style="text-align:center; margin:40px 0 0">There is no data...</p>
+        <button type="submit" onclick="location.href='/order'" value="/product/InsertProduct" class="btn btn-dark" style="margin:20px auto 0; display:block;">Order Now</button>
       </div>
+      @endif
+      
+          
+      
+          
 
-  
+        </div>
+      </div>    
+      
+      
+      
+      {{-- table --}}
+    
+      
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -37,9 +37,10 @@
 						<ul>
 							<li><a href="/index">Utama</a></li>
 
-							<li><a href="/offers">Mobil Dengan Supir</a></li>
+							
+							<li><a href="/mobil_dengan_supir">Mobil Dengan Supir</a></li>
 
-							<li><a href="/fleet" class="active">Mobil Tanpa Supir</a></li>
+							<li><a href="/mobil_tanpa_supir">Mobil Tanpa Supir</a></li>
 
 							<li>
 								<a href="#" class="dropdown-toggle">Lainnya</a>
