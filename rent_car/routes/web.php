@@ -67,8 +67,24 @@ Route::get('/register', function () {
     return view('register');
 });
 
+/*..............Admin Land..................*/
 
+Route::get('home', function () {
+    return view('admin.home');
 
+});
 
+Route::get('main', function () {
+    return view('admin.main');
 
+});
 
+Route::get('product', 'App\Http\Controllers\ProductController@data');
+
+Route::get('order', 'App\Http\Controllers\OrderController@data');
+
+Route::get('history', 'App\Http\Controllers\HistoryController@data');
+
+Route::get('/insert_product', function () {
+    return view('admin.insert_product');
+});
