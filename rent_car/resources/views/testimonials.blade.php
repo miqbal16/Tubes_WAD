@@ -137,11 +137,12 @@
 									<p class="m-n"><em>"Sudah beberapa kali tetap tidak mengecewakan"</em></p>
 								</div>
 							</div>
-
+							
 							<br>
 							<br>
 							<h2>Tambahkan Ulasan</h2>
-								<form method="post" action="#">
+								<form action="{{route('ulasan.addUlasan')}}" method="post">
+									{{ csrf_field() }}
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Nama" />
@@ -150,9 +151,9 @@
 										<div class="field half">
 											<input type="text" name="email" id="email" placeholder="Email" />
 										</div>
-
+										
 										<div class="field">
-											<textarea name="ulasan" id="ulasan" rows="3" placeholder="Ulasan"></textarea>
+											<textarea name="description" id="description" rows="3" placeholder="Ulasan"></textarea>
 										</div>
 
 										<div class="field text-right">

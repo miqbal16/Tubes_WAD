@@ -40,39 +40,32 @@
     </nav>
 
       {{-- card --}}
-      {{-- @if ($order->count() > 0)
+      @if ($ulasan->count() > 0)
       <div class="container">
         <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">ULASAN</h2>
         <div class="row row-cols-1 row-cols-md-3">
-          @foreach ($order as $or)
-          <div class="col mb-4">
-              <div class="card" style="width: 20rem;">
-                <img src="{{asset('img/sepatu.jpg')}}" class="card-img-top" alt="...">
-              <div class="card-body">
-              <h5 class="card-title">{{$or->name}}</h5>
-              <p class="card-text">{{$or->description}}</p>
-              @if ($or->stock == 0)
-                  
-              <h3 style="color: green">No Stock</h3>
-              @else
-                  
-              <h3 style="color: green">${{$or->price}}.00</h3>
-              @endif    
-            
-              <a href="{{url("order/{$or->id}/ProsesOrder")}}" class="btn btn-success">Order Now</a>
+          @foreach ($ulasan as $ul)
+          <div class="card text-white bg-primary mb-4" style="max-width: 16rem; margin-left: 20px">
+            <div class="card-header">{{$ul->email}}</div>
+            <div class="card-body">
+              <h5 class="card-title">{{$ul->name}}</h5>
+              <p class="card-text">{{$ul->description}}</p>
             </div>
-          </div>    
-            </div>
+            <a href="https://www.gmail.com" class="btn btn-success">Balas</a>
+            <form action="{{route('ulasan.delete')}}" method="post">
+              @csrf
+              <input type="hidden" value="{{$ul->id}}" name="id" class="btn btn-primary">
+              <button class="btn btn-danger" style="width: 100%">Delete</button>
+            </form>
+          </div>
           @endforeach
         </div>
       </div>    
       @else
       <div class="col-sm">
-        <p style="text-align:center; margin:40px 0 0">There is no data...</p>
-        <button type="submit" onclick="location.href='/product/InsertProduct'" value="/product/InsertProduct" class="btn btn-dark" style="margin:20px auto 0; display:block;">Add Product</button>
+        <p style="text-align:center; margin:40px 0 0">Tidak ada ulasan</p>
       </div>
-      @endif --}}
-      
+      @endif
 
       
 

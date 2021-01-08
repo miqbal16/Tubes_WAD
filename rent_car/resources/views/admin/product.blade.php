@@ -75,7 +75,7 @@
                 <td>{{$pro->status}}</td>
                 <td>
                   <div class="box" style="display: flex; justify-align: center;">
-                    <a href="{{url("product/{$pro->id}/UpdateProduct")}}" class="btn btn-primary" style="margin-right: 10px">Edit</a>
+                    <a href="{{url("car_list/{$pro->id}/UpdateProduct")}}" class="btn btn-primary" style="margin-right: 10px">Edit</a>
                     <form action="{{route('product.delete')}}" method="post">
                       @csrf
                       <input type="hidden" value="{{$pro->id}}" name="id" class="btn btn-primary">

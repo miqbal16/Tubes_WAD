@@ -8,7 +8,7 @@ use App\Models\Order;
 
 class OrderController extends Controller
 {
-    //
+    
     public function index() {
         $order = Product::all();
         return view('admin.order', compact('order'));

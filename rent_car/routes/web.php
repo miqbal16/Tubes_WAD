@@ -76,11 +76,13 @@ Route::get('/car_list/{id}/UpdateProduct', '\App\Http\Controllers\ProductControl
 Route::patch('/car_list/{id}', '\App\Http\Controllers\ProductController@update')->name('product.update');
 Route::post('/car_list','\App\Http\Controllers\ProductController@storeProduct')->name('product.storeProduct');
 Route::post('/car_list/delete','\App\Http\Controllers\ProductController@delete')->name('product.delete');
-
+Route::post('/index','\App\Http\Controllers\UlasanController@addUlasan')->name('ulasan.addUlasan');
 Route::view('/admin', 'admin.home');
-
-Route::get('ulasan','\App\Http\Controllers\OrderController@index')->name('order.page');
+Route::get('ulasan','\App\Http\Controllers\UlasanController@index')->name('order.page');
+Route::post('ulasan/delete','\App\Http\Controllers\UlasanController@delete')->name('ulasan.delete');
 
 Route::get('/order/{id}/ProsesOrder', '\App\Http\Controllers\OrderController@prosesOrder')->name('order.proses.page');
 Route::post('/order/buy', '\App\Http\Controllers\OrderController@buy')->name('order.success');
 Route::get('/history', '\App\Http\Controllers\OrderController@history')->name('history.page');
+
+
