@@ -15,6 +15,9 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
+						<?php  if(!isset($_SESSION["akun"])) {
+    						header("Location: login.php");
+  							}?>
 
 							<!-- Logo -->
 								<a href="/index" class="logo">
@@ -24,10 +27,17 @@
 							<!-- Nav -->
 								<nav>
 									<ul>
+									<ul><a href="login" class="btn btn-outline-success mr-3">Login</a> 
+									
+									<a href="register" class="btn btn-outline-danger">Daftar</a>
+
+									<a href="#" class="btn btn-outline-danger">Admin</a></ul>
+									
 										<li><a href="#menu">Menu</a></li>
+										
 									</ul>
 								</nav>
-
+								
 						</div>
 					</header>
 
