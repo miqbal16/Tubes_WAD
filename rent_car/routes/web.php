@@ -21,9 +21,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
+// Route::get('/index', function () {
+//     return view('index');
+// });
 
 Route::get('/blog-post', function () {
     return view('blog-post');
@@ -63,9 +63,9 @@ Route::get('/testimonials', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
 /*..............Admin Land..................*/
 
@@ -85,4 +85,7 @@ Route::get('/order/{id}/ProsesOrder', '\App\Http\Controllers\OrderController@pro
 Route::post('/order/buy', '\App\Http\Controllers\OrderController@buy')->name('order.success');
 Route::get('/history', '\App\Http\Controllers\OrderController@history')->name('history.page');
 
-
+Route::post('/register/add','\App\Http\Controllers\authcontroller@register')->name('register.register');
+Route::get('/index', '\App\Http\Controllers\authcontroller@halamanutama')->name('halamanutama.index');
+Route::get('/register', '\App\Http\Controllers\authcontroller@halamanregister')->name('halamanregister.register');
+Route::get('/login', '\App\Http\Controllers\authcontroller@halamanlogin')->name('halamanlogin.login');
