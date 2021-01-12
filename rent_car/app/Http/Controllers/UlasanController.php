@@ -14,15 +14,13 @@ class UlasanController extends Controller
 
     public function addUlasan(Request $request) {
 
-        // $photo = $request->file_img->file();
-        // $request->file_img->move(public_path('img/upload'), $photo);
 
         $ulasan = new Ulasan();
 
         $ulasan->email = $request->email;
         $ulasan->name = $request->name;
         $ulasan->description = $request->description;
-        // $produk->img_path = $photo;
+        
 
 
         $ulasan->save();

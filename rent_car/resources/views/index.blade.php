@@ -15,9 +15,6 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-						<?php  if(!isset($_SESSION["akun"])) {
-    						header("Location: login.php");
-  							}?>
 
 							<!-- Logo -->
 								<a href="/index" class="logo">
