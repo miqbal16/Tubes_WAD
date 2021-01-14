@@ -24,8 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="margin:auto; font-weight: bold;">
           <li class="nav-item active">
-            <a class="nav-link" href="/admin" style="color: #555555">HOME <span class="sr-only"></span></a>
-          </li>
+            <button type="button" onclick="location.href='{{route('myAdmin')}}'" class="btn btn-primary">Customer Page</button>          </li>
           <li class="nav-item active" style="margin-left: 60px">
               <a class="nav-link" href="/car_list" style="color: #555555">CAR <span class="sr-only"></span></a>
             </li>
@@ -40,15 +39,16 @@
     </nav>
 
       {{-- content --}}
-      
+
       <div class="container">
-        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Input Product</h2>
+        <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Input Car</h2>
+       
         <div class="row">
           <div class="col-sm-10" style="margin:auto">
-          <form action="{{route('carList.saveCar')}}" method="post">
+          <form action="{{route('carList.saveCar')}}" method="post" enctype="multipart/form-data">
               {{ csrf_field() }}
                 <div class="form-group">
-                  <label for="disabledTextInput">Product Name</label>
+                  <label for="disabledTextInput">Car Name</label>
                   <input type="text" id="disabledTextInput" class="form-control" name="name_product">
                 </div>
 

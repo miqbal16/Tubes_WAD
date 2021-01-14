@@ -9,7 +9,7 @@ class UlasanController extends Controller
     //
     public function index() {
         $ulasan = Ulasan::all();
-        return view('admin.order', compact('ulasan'));
+        return view('admin.ulasan', compact('ulasan'));
     }
 
     public function addUlasan(Request $request) {

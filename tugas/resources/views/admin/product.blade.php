@@ -23,9 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="margin:auto; font-weight: bold;">
           <li class="nav-item active">
-            <a class="nav-link" href="/admin" style="color: #555555">HOME <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item active" style="margin-left: 60px">
+            <button type="button" onclick="location.href='{{route('myAdmin')}}'" class="btn btn-primary">Customer Page</button>          <li class="nav-item active" style="margin-left: 60px">
               <a class="nav-link" href="/car_list" style="color: #555555">CAR <span class="sr-only"></span></a>
             </li>
             <li class="nav-item active" style="margin-left: 60px">

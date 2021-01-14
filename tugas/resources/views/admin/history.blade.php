@@ -23,8 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" style="margin:auto; font-weight: bold;">
           <li class="nav-item active">
-            <a class="nav-link" href="/admin" style="color: #555555">HOME <span class="sr-only"></span></a>
-          </li>
+            <button type="button" onclick="location.href='{{route('myAdmin')}}'" class="btn btn-primary">Customer Page</button>          </li>
           <li class="nav-item active" style="margin-left: 60px">
               <a class="nav-link" href="/car_list" style="color: #555555">CAR <span class="sr-only"></span></a>
             </li>
@@ -50,10 +49,19 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Product</th>
-                <th scope="col">Buyer Name</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
                 <th scope="col">Contact</th>
-                <th scope="col">Amount</th>
+                <th scope="col">Name Car</th>
+                <th scope="col">No Polisi</th>
+                <th scope="col">Tahun</th>
+                <th scope="col">Status Car</th>
+                <th scope="col">Mulai Rent</th>
+                <th scope="col">Akhir Rent</th>
+                <th scope="col">Pembayaran</th>
+                <th scope="col">Total</th>
+                <th scope="col">Status Pembayaran</th>
+                
               </tr>
             </thead>
             <?php $number = 1; ?>
@@ -61,14 +69,18 @@
               @foreach ($order as $or)
               <tr>
                 <th scope="row">{{$number}}</th>
-                @foreach ($produk as $pro)
-                  @if ($pro->id == $or->product_id)
-                    <td>{{$pro->name}}</td>
-                  @endif      
-                @endforeach
-                <td>{{$or->buyer_name}}</td>
-                <td>{{$or->buyer_contact}}</td>
-                <td>${{$or->amount}}.00</td>
+                <td>{{$or->name}}</td>
+                <td>{{$or->email}}</td>
+                <td>{{$or->no_hp}}</td>
+                <td>{{$or->name_car}}</td>
+                <td>{{$or->no_polisi}}</td>
+                <td>{{$or->tahun_kendaraan}}</td>
+                <td>{{$or->status_car}}</td>
+                <td>{{$or->mulai}}</td>
+                <td>{{$or->kembali}}</td>
+                <td>{{$or->pembayaran}}</td>
+                <td>{{$or->total}}</td>
+                <td>{{$or->status_pembayaran}}</td>
               </tr>
               <?php $number += 1; ?>    
               @endforeach

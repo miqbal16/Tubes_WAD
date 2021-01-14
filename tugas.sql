@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2021 at 02:08 PM
+-- Generation Time: Jan 14, 2021 at 02:18 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -45,8 +45,8 @@ CREATE TABLE `car_list` (
 --
 
 INSERT INTO `car_list` (`id`, `name`, `price`, `description`, `isi_penumpang`, `pintu`, `img_path`, `status`, `no_polisi`, `tahun`) VALUES
-(10, 'Avanza 2017', 160000, 'aaaaaa', 5, 4, NULL, 'Tanpa Driver', 'B4321AB', 2018),
-(11, 'Honda Civic 2013', 1000000, 'ini mobil honda civic', 4, 4, NULL, 'Pakai Driver', 'B4321AB', 2013);
+(1, 'Pajero Dakar', 1000000, 'dwadwadawdwa', 5, 4, NULL, 'Tanpa Driver', 'B1111AD', 2018),
+(2, 'Avanza', 1300000, 'dwadawdawdwad', 5, 4, NULL, 'Pakai Driver', 'D4120DD', 2014);
 
 -- --------------------------------------------------------
 
@@ -81,11 +81,50 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2021_01_12_055652_create_car_list_table', 2),
-(5, '2021_01_12_111113_create_ulasan_table', 3);
+(61, '2014_10_12_000000_create_users_table', 1),
+(62, '2014_10_12_100000_create_password_resets_table', 1),
+(63, '2019_08_19_000000_create_failed_jobs_table', 1),
+(64, '2021_01_12_055652_create_car_list_table', 1),
+(65, '2021_01_12_111113_create_ulasan_table', 1),
+(66, '2021_01_13_190155_create_order_table', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name_car` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `keterangan` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `mulai` date NOT NULL,
+  `kembali` date NOT NULL,
+  `no_hp` bigint(20) UNSIGNED NOT NULL,
+  `id_car` int(11) NOT NULL,
+  `pembayaran` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status_pembayaran` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `no_polisi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status_car` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `total` bigint(20) UNSIGNED NOT NULL,
+  `tahun_kendaraan` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`id`, `email`, `name`, `name_car`, `keterangan`, `mulai`, `kembali`, `no_hp`, `id_car`, `pembayaran`, `status_pembayaran`, `no_polisi`, `status_car`, `total`, `tahun_kendaraan`, `created_at`, `updated_at`) VALUES
+(1, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdawdwadwadawdda', '2020-02-12', '2020-02-15', 85316269505, 1, 'BCA (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 3000000, 2018, NULL, NULL),
+(2, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwaddawdawdwa', '2020-05-12', '2020-05-17', 81288591789, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 6500000, 2014, NULL, NULL),
+(3, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdwadawdwa', '2020-02-14', '2020-02-16', 85316269505, 1, 'Mandiri (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 2000000, 2018, NULL, NULL),
+(4, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdwadawdwa', '2020-02-14', '2020-02-16', 85316269505, 1, 'Mandiri (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 2000000, 2018, NULL, NULL),
+(5, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwadwadwadwadwadawdawd', '2020-06-14', '2020-06-18', 85316269505, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 5200000, 2014, NULL, NULL),
+(6, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwadwadwadwadwadawdawd', '2020-06-14', '2020-06-18', 85316269505, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 5200000, 2014, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -98,13 +137,6 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `password_resets`
---
-
-INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
-('miqbaal1605@gmail.com', '$2y$10$sbHyMVy3uCivkEWUSr0B4.2MAbSrXTn4czYc2j3.7d4YCs1BuetOe', '2021-01-12 05:38:38');
 
 -- --------------------------------------------------------
 
@@ -126,8 +158,7 @@ CREATE TABLE `ulasan` (
 --
 
 INSERT INTO `ulasan` (`id`, `email`, `name`, `description`, `created_at`, `updated_at`) VALUES
-(2, 'bob@gmail.com', 'Muhammad Iqbal', 'dwadwadwad', NULL, NULL),
-(3, 'iqbal@gmail.com', 'Muhammad Iqbal', 'dwadwadawdawdwa', NULL, NULL);
+(1, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'dwadawd', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -151,9 +182,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', NULL, '$2y$10$YhoiDvn3RyGqEUH/eMXSj.8exxcTLJzExBJ41vEKjQey8yKPNSC8.', '7BzUTJv5Txr2R6eUst7klBZVsNSM67Rj9XyEuVx0aaoC5TlORC4oWVJKAGi9', '2021-01-11 15:36:01', '2021-01-11 15:36:01'),
-(2, 'Muhammad Iqbal', 'iqbal@gmail.com', NULL, '$2y$10$PF8c343go4rk83ein4u2KumVUSUe8e9IPXbXF011fziq/suIqRszK', 'VUHIHKa4g38b4zwlIhATZ5y3J1bAR0glXmharOUV8UyyzTxTwo7kzlebyK3q', '2021-01-11 18:05:02', '2021-01-11 18:05:02'),
-(3, 'Muhammad Iqbal', 'miqbaal1605@gmail.com', NULL, '$2y$10$stxbsK801gOltH7GVOZvUu4NsWMqP/lUDGhTilh7jTQwqofCj8SMe', 'ahoev6z7tirDRHGFndgz5G2KBZgSTcHHswBJSy1Mv7uaCzyajRKZ41zBCKml', '2021-01-12 05:38:21', '2021-01-12 05:38:21');
+(1, 'admin', 'admin@example.com', NULL, '$2y$10$oxoni4sWFWU0tsBblIlD9On/rD3wSqvMlIKyuCd6X106DrCHcwj9W', NULL, '2021-01-14 00:35:15', '2021-01-14 00:35:15'),
+(2, 'Muhammad Iqbal', 'miqbaal1605@gmail.com', NULL, '$2y$10$YHuVMKhOKCZNqv9oA1XXWOjRlUEx9zkHFyi7xhsL4qiKEaCCreRvu', NULL, '2021-01-14 00:36:27', '2021-01-14 00:36:27');
 
 --
 -- Indexes for dumped tables
@@ -163,7 +193,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 -- Indexes for table `car_list`
 --
 ALTER TABLE `car_list`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `car_list_no_polisi_unique` (`no_polisi`);
 
 --
 -- Indexes for table `failed_jobs`
@@ -176,6 +207,12 @@ ALTER TABLE `failed_jobs`
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `order`
+--
+ALTER TABLE `order`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -205,7 +242,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `car_list`
 --
 ALTER TABLE `car_list`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -217,19 +254,25 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+
+--
+-- AUTO_INCREMENT for table `order`
+--
+ALTER TABLE `order`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `ulasan`
 --
 ALTER TABLE `ulasan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

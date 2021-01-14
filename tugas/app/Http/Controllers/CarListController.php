@@ -10,6 +10,26 @@ class CarListController extends Controller
     public function carList() {
         $car = Car::all();
         return view('admin.product', compact('car'));
+
+    }
+
+    public function adminPage(Request $request) {
+        if ($request->admin == "admin@example.com") {
+            return view('admin.home');
+        }else {
+            return view('/');
+        }
+    }
+
+
+    public function carMenu1() {
+        $car = Car::all();
+        return view('/mobil_tanpa_supir', compact('car'));
+    }
+
+    public function carMenu2() {
+        $car = Car::all();
+        return view('/mobil_dengan_supir', compact('car'));
     }
 
     public function addCar() {
@@ -26,30 +46,51 @@ class CarListController extends Controller
         // $photo = $request->file_img->file();
         // $request->file_img->move(public_path('img/upload'), $photo);
 
-        $car = new Car();
+        // $car = new Car();
 
-        $car->name = $request->name_product;
-        $car->price = $request->price;
-        $car->description = $request->description;
-        $car->isi_penumpang = $request->isi_penumpang;
-        $car->pintu = $request->pintu;
-        $car->status= $request->status;
-        $car->no_polisi= $request->no_polisi;
-        $car->tahun= $request->tahun;
+        // $car->name = $request->name_product;
+        // $car->price = $request->price;
+        // $car->description = $request->description;
+        // $car->isi_penumpang = $request->isi_penumpang;
+        // $car->pintu = $request->pintu;
+        // $car->status= $request->status;
+        // $car->no_polisi= $request->no_polisi;
+        // $car->tahun= $request->tahun;
+        // $car->img_path = $request->file_img;
+
         
+
+        // $car->save();
+
+
+         
+
+           if ($request->hasFile('file_img')) {
+            
+            $image = $request->file('file_img');
+            $teaser_image = time().'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/img_car');
+            $image->move($destinationPath, $teaser_image);
+
+            $myCar = Car::create([
+                'name' => $request->get('name_product'),
+                'price'  => $request->get('price'),
+                'description'     => $request->get('description'),
+                'isi_penumpang'   => $request->get('isi_penumpang'),
+                'pintu'   => $request->get('pintu'),
+                'status'   => $request->get('status'),
+                'no_polisi'  => $request->get('no_polisi'),
+                'tahun'   => $request->get('tahun'),
+                   'img_path'       => $request->get('file_img') ?? null,
+               ]);
+
+                } else {
+
+    return redirect(route('carList.addCar', ['txt' => $txt]));
+    }
         
-        if($request->hasFile('file_img')){
-            $resorce = $request->file('file_img');
-            $name   = $resorce->getClientOriginalName();
-            $resorce->move(\base_path() ."/public/images", $name);
-            $save = DB::table('car_list')->insert(['img_path' => $name]);
-        }
 
-        $car->save();
-
-
-
-        return redirect(route('carList.carPage'));
+           return redirect(route('carList.carPage'));
 
     }
 

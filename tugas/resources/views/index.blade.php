@@ -43,12 +43,12 @@
 							<!-- Nav -->
 								<nav>
 									<ul>
-                                        <li>
+                                        <li style="display: inline; margin: 10px;">
                                             @if (Route::has('login'))
                                         
                                             	@auth
-												<li class="nav-item dropdown">
-													<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px" v-pre>
+												<li class="nav-item dropdown" style="display: inline; margin-right: 10px;">
+													<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align: center" v-pre>
 														{{ Auth::user()->name }}
 													</a>
 				
@@ -64,8 +64,13 @@
 														</form>
 												</div>
 
-												@if (Auth::user()->name == "admin")
-													<li><a href="{{ route('myAdmin') }}" class="ml-4 text-sm text-gray-700 underline" style="margin-right: 10px">Admin Mode</a></li>
+												@if (Auth::user()->email == "admin@example.com")
+													<form action="{{ route('myAdmin') }}" method="POST">
+														{{ csrf_field() }}
+														<button name="submit" class="ml-4 text-sm text-gray-700 underline" style="margin-right: 15px;">Admin Mode</button>
+														<input type="text" name="admin" id="admin" value="{{Auth::user()->email}}" hidden>
+													</form>
+													
 												@endif
 
 											</li>

@@ -190,7 +190,7 @@
 									<div class="field half">
 										@if (Route::has('login'))
 											@auth
-												<input type="text" value="{{ Auth::user()->name }}" name="name" id="name" placeholder="Nama Anda" required/>
+												<input type="text" value="{{ Auth::user()->name }}" name="name" id="name" placeholder="Nama Anda" required readonly/>
 										
 										@else
 												<input type="text" name="name" id="name" placeholder="Nama Anda" required/>
@@ -199,28 +199,28 @@
 									</div>
 										
 									<div class="field half">
-										<select name="vehicle-type" id="vehicle-type">
-											<option value="">Pajero Dakar</option>
-											<option value="">Alphard</option>
-											<option value="">CRV</option>
-											<option value="">Xpander</option>
-											<option value="">Honda Accord</option>
-											<option value="">Grand Livina</option>
+										<select name="name_car" id="vehicle-type">
+											@foreach ($car as $cr)
+												@if($cr->status == "Tanpa Driver")
+													<option value="{{$cr->id}}">{{$cr->name}}</option>
+												@endif
+											@endforeach
 										</select>
 									</div>
 
 									<div class="field half">
-										<input type="text" name="date-from" id="date-from" placeholder="Tanggal dan waktu penjemputan" required/>
+										<input type="date" class="form-control" id="inputDate" name="mulai" placeholder="Tanggal dan waktu penjemputan" required>
 									</div>
 
+
 									<div class="field half">
-										<input type="text" name="date-to" id="date-to" placeholder="Tanggal dan waktu kembali" required/>
+										<input type="date" class="form-control" id="inputDate" name="kembali" placeholder="Tanggal dan waktu kembali" required>
 									</div>
 
 									<div class="field half">
 										@if (Route::has('login'))
 											@auth
-												<input type="text" value="{{ Auth::user()->email }}" name="email" id="email" placeholder="Email" required/>
+												<input type="text" value="{{ Auth::user()->email }}" name="email" id="email" placeholder="Email" required readonly/>
 										@else
 												<input type="text" name="email" id="email" placeholder="Email" required/>
 											@endauth
@@ -228,11 +228,11 @@
 									</div>
 
 									<div class="field half">
-										<input type="text" name="phone" id="phone" placeholder="No. Handphone" required/>
+										<input type="number" name="no_hp" id="phone" placeholder="No. Handphone" required/>
 									</div>
 
 									<div class="field">
-										<textarea name="message" id="message" rows="3" placeholder="Komen" required></textarea>
+										<textarea name="keterangan" id="message" rows="3" placeholder="Komen" required></textarea>
 									</div>
 
 									<div class="field text-right">

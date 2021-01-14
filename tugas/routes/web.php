@@ -38,13 +38,9 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-Route::get('/mobil_tanpa_supir', function () {
-    return view('mobil_tanpa_supir');
-});
+Route::get('/mobil_tanpa_supir','\App\Http\Controllers\CarListController@carMenu1');
 
-Route::get('/mobil_dengan_supir', function () {
-    return view('mobil_dengan_supir');
-});
+Route::get('/mobil_dengan_supir','\App\Http\Controllers\CarListController@carMenu2');
 
 Route::get('/team', function () {
     return view('team');
@@ -58,9 +54,6 @@ Route::get('/testimonials', function () {
     return view('testimonials');
 });
 
-Route::get('/pemabayaran', function () {
-    return view('pembayaran');
-});
 
 
 //-------------------------------------
@@ -76,13 +69,16 @@ Route::patch('/car_list/{id}', '\App\Http\Controllers\CarListController@update')
 Route::post('/car_list','\App\Http\Controllers\CarListController@saveCar')->name('carList.saveCar');
 Route::post('/car_list/delete','\App\Http\Controllers\CarListController@delete')->name('carList.delete');
 Route::post('/','\App\Http\Controllers\UlasanController@addUlasan')->name('ulasan.addUlasan');
-Route::view('/admin', 'admin.home')->name('myAdmin');
-Route::get('ulasan','\App\Http\Controllers\UlasanController@index')->name('order.page');
+Route::post('/admin', '\App\Http\Controllers\CarListController@adminPage')->name('myAdmin');
+Route::view('/pembayaran/virtual_number', 'virtual_number')->name('virtual_number');
+Route::view('/pembayaran/success', 'bayar_ditempat')->name('tunai');
+Route::post('/pembayaran/proses', '\App\Http\Controllers\HomeController@saveDataOrder')->name('dataOrder');
+Route::get('ulasan','\App\Http\Controllers\UlasanController@index')->name('ulasan.page');
 Route::post('ulasan/delete','\App\Http\Controllers\UlasanController@delete')->name('ulasan.delete');
 
 Route::get('/order/{id}/ProsesOrder', '\App\Http\Controllers\OrderController@prosesOrder')->name('order.proses.page');
 Route::post('/order/buy', '\App\Http\Controllers\OrderController@buy')->name('order.success');
-Route::get('/history', '\App\Http\Controllers\OrderController@history')->name('history.page');
+Route::get('/history', '\App\Http\Controllers\HomeController@ListOrder')->name('history.page');
 
 Route::post('/register/add','\App\Http\Controllers\authcontroller@register')->name('register.register');
 Route::get('/index', '\App\Http\Controllers\authcontroller@halamanutama')->name('halamanutama.index');

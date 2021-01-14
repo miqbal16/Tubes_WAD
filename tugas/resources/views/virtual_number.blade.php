@@ -7,58 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Admin Page</title>
-    <style>
-      body {
-      background-color: rgb(250, 250, 250); 
-    }
-    </style>
-    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Pembayaran</title>
   </head>
   <body>
-    
-    {{-- navbar --}}
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="margin:auto; font-weight: bold;">
-         
-          <li class="nav-item active">
-            <button type="button" onclick="location.href='{{route('myAdmin')}}'" class="btn btn-primary">Customer Page</button>          </li>
-          <li class="nav-item active" style="margin-left: 60px">
-              <a class="nav-link" href="/car_list" style="color: #555555">CAR <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active" style="margin-left: 60px">
-              <a class="nav-link" href="/ulasan" style="color: #555555">ULASAN <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active" style="margin-left: 60px">
-              <a class="nav-link" href="/history" style="color: #555555">RENT HISTORY<span class="sr-only"></span></a>
-            </li>
-        </ul>
-      </div>
-    </nav>
-
-
-      {{-- content --}}
-      
       <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h1 style="text-align: center; color: salmon; margin: 200px 0 40px">WELCOME TO ADMIN PAGE</h1>
+        <div class="card" style="width: 25rem; margin: 60px auto 0">
+            <img src="{{ asset('images/img_checklist.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title" style="text-align: center">VIRTUAL NUMBER</h4>
+              <h5 class="card-title" style="text-align: center">{{rand(147000000000, 147999999999)}}</h5>
+              <p style="text-align: center; color: darkblue; font-size: 18px">Rp.{{$price}}</p>
+              <p class="card-text" style="text-align: justify">Terimakasih telah melakukan pemesanan rental mobil. silahkan transfer pembayaran sesuai dengan harga yg di cantumkan dan mengirim ke virtual nomor tersebut</p>
+              <a href="/" class="btn btn-primary" style="margin: auto; display: block">Back to Customer Page</a>
+            </div>
           </div>
-        </div>
       </div>
-
-  
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
+
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
