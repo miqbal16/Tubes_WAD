@@ -70,7 +70,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>JohnThor</strong></p>
+									<p><strong>Suryaterang</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -80,7 +80,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>Johnydep</strong> </p>
+									<p><strong>yantosuyatno</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -94,7 +94,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>JohnThor</strong></p>
+									<p><strong>dadangescobar</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -104,7 +104,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>Johnydep</strong> </p>
+									<p><strong>Wahyudisuryadiningrat</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -118,7 +118,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>JohnThor</strong></p>
+									<p><strong>ilhamkurniyadi</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -128,7 +128,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>Johnydep</strong> </p>
+									<p><strong>bahibsudrajat</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
