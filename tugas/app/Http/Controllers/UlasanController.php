@@ -12,6 +12,10 @@ class UlasanController extends Controller
         return view('admin.ulasan', compact('ulasan'));
     }
 
+    public function ulasanSuccess() {
+        return view('kirim_usulan');
+    }
+
     public function addUlasan(Request $request) {
 
 
@@ -25,7 +29,7 @@ class UlasanController extends Controller
 
         $ulasan->save();
 
-        return redirect(route('ulasan.addUlasan'));
+        return redirect(route('ulasan.terkirim'));
 
     }
 
@@ -33,7 +37,7 @@ class UlasanController extends Controller
 
         $ulasan = Ulasan::find($request->id);
         $ulasan->delete();
-        return redirect(route('order.page'));
+        return redirect(route('ulasan.page'));
         
     }
 }

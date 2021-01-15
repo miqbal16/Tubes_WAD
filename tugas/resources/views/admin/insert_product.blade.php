@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Insert Product</title>
+    <title>Insert Car</title>
     <style>
       body {
       background-color: rgb(250, 250, 250); 
@@ -56,7 +56,7 @@
                   <label for="disabledTextInput">No Polisi</label>
                   <input type="text" id="disabledTextInput" class="form-control" name="no_polisi">
                 </div>
-
+                
                 <div class="mb-3">
                   <label for="disabledTextInput">Price</label>
                   <div class="input-group">

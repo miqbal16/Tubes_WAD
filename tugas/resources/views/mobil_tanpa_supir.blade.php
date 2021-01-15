@@ -64,117 +64,28 @@
 							<!-- Fleet -->
 							<!-- TANPA SUPIR -->
 							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/tanpasupir-xpander.jpg" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Xpander</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 400.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-								
-								<article class="style2">
-									<span class="image">
-										<img src="images/tanpasupir-ayla.png" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Ayla</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 200.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran kecil. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/tanpasupir-alphard.jpg" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Alphard</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style4">
-									<span class="image">
-										<img src="images/tanpasupir-hrv.png" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>HR-V</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 300.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style5">
-									<span class="image">
-										<img src="images/tanpasupir-fortuner.jpg" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Fortuner</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-
-								<article class="style6">
-									<span class="image">
-										<img src="images/tanpasupir-camry.png" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Camry</h2>
-										<p>Harga mulai dari: <strong> Rp. 300.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
+									@foreach ($car as $cr)
+										@if($cr->status == "Tanpa Driver")
+									<article class="style1">
+										<span class="image">
+											<img src="img_car/{{$cr->img_path}}" alt="image_car" />
+										</span>
+										<a href="#footer" class="scrolly">
+											<h2>{{$cr->name}}</h2>
+											
+											<p>Harga mulai dari: <strong> Rp. {{$cr->price}}</strong> per hari
+											<br>
+												<i class="fa fa-user"></i> {{$cr->isi_penumpang}} &nbsp;&nbsp;
+												<i class="fa fa-sign-out"></i>{{$cr->pintu}} &nbsp;&nbsp;
+												<i class="fa fa-cog"></i> A/M
+											</p>
+											<div class="content">
+												<p>{{$cr->description}}</p>
+											</div>
+										</a>
+									</article>
+								@endif
+							@endforeach		
 							</section>
 						</div>
 					</div>
@@ -209,11 +120,13 @@
 									</div>
 
 									<div class="field half">
+										<label>Mulai Rental</label>
 										<input type="date" class="form-control" id="inputDate" name="mulai" placeholder="Tanggal dan waktu penjemputan" required>
 									</div>
 
 
 									<div class="field half">
+										<label>Akhir Rental</label>
 										<input type="date" class="form-control" id="inputDate" name="kembali" placeholder="Tanggal dan waktu kembali" required>
 									</div>
 
@@ -228,11 +141,11 @@
 									</div>
 
 									<div class="field half">
-										<input type="number" name="no_hp" id="phone" placeholder="No. Handphone" required/>
+										<input type="number" name="no_hp" class="form-control" id="phone" placeholder="No. Handphone" required/>
 									</div>
 
 									<div class="field">
-										<textarea name="keterangan" id="message" rows="3" placeholder="Komen" required></textarea>
+										<textarea name="keterangan" id="message" rows="3" placeholder="Alamat" required></textarea>
 									</div>
 
 									<div class="field text-right">
@@ -246,7 +159,7 @@
 								</form>
 								
 							<ul class="copyright">
-								<li>Copyright © 2020 Company Name </li>
+								<li>Copyright © 2020 Rentalin Aja! </li>
 								</ul>
 						</div>
 					</footer>

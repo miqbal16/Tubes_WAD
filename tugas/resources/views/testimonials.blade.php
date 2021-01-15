@@ -70,7 +70,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>Suryaterang</strong></p>
+									<p><strong>Jotaro Joestar</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -80,7 +80,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>yantosuyatno</strong> </p>
+									<p><strong>Bondan Bimo</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -94,7 +94,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>dadangescobar</strong></p>
+									<p><strong>Rusli Zidan</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -104,7 +104,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>Wahyudisuryadiningrat</strong> </p>
+									<p><strong>Febriansyah</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -118,7 +118,7 @@
 
 							<div class="row">
 								<div class="col-sm-6 text-center">
-									<p><strong>ilhamkurniyadi</strong></p>
+									<p><strong>Nando Hermawan</strong></p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
@@ -128,7 +128,7 @@
 								</div>
 
 								<div class="col-sm-6 text-center">
-									<p><strong>bahibsudrajat</strong> </p>
+									<p><strong>Li Fei</strong> </p>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star checked"></span>

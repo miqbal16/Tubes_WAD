@@ -69,40 +69,8 @@
 								Pada hari Senin s.d Jum'at (tidak termasuk hari libur) Pukul 09.00 - 16.00 WIB, Dengan senang hati Customer Service kami akan membantu Anda.
 							</div>
 					</div>
-
-				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Hubungi Kami!</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Nama" />
-										</div>
-
-										<div class="field half">
-											<input type="text" name="email" id="email" placeholder="Email" />
-										</div>
-
-										<div class="field">
-											<input type="text" name="subject" id="subject" placeholder="Subject" />
-										</div>
-
-										<div class="field">
-											<textarea name="message" id="message" rows="3" placeholder="Notes"></textarea>
-										</div>
-
-										<div class="field text-right">
-											<label>&nbsp;</label>
-
-											<ul class="actions">
-												<li><input type="submit" value="Kirim Pesan" class="primary" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
 							<section>
 								<h2>Info Kontak</h2>
 

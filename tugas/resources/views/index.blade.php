@@ -163,64 +163,43 @@
 							<br>
 
 							<h2 class="h2">Dengan Supir</h2>
-
 							<!-- Offer -->
 							<!-- DENGAN SUPIR -->
+							@php
+							$number1 = 0
+							@endphp
 							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/supir_pajero.jpg" alt="" width="250px" height="250px" />
-									</span>
-									<a href="/mobil_dengan_supir">
-										<h2>Pajero Dakar</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 1.600.000</strong> per hari
-										<br>
-										<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-										<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-										<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran sedang. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/supir_alphard.jpg" alt="" width="250px" height="250px" />
-									</span>
-									<a href="/mobil_dengan_supir">
-										<h2>Alphard</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 1.800.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 5 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 5 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/supir_crv.jpg" alt="" width="250px" height="250px" />
-									</span>
-									<a href="/mobil_dengan_supir">
-										<h2>CRV</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 1.000.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 3 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
+								@foreach ($car as $cr)
+										@if($cr->status == "Pakai Driver")
+									<article class="style1">
+										<span class="image">
+											<img src="img_car/{{$cr->img_path}}" alt="image_car" />
+										</span>
+										<a href="/mobil_dengan_supir" class="scrolly">
+											<h2>{{$cr->name}}</h2>
+											
+											<p>Harga mulai dari: <strong> Rp. {{$cr->price}}</strong> per hari
+											<br>
+												<i class="fa fa-user"></i> {{$cr->isi_penumpang}} &nbsp;&nbsp;
+												<i class="fa fa-sign-out"></i>{{$cr->pintu}} &nbsp;&nbsp;
+												<i class="fa fa-cog"></i> A/M
 											</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 3 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
+											<div class="content">
+												<p>{{$cr->description}}</p>
+											</div>
+										</a>
+									</article>
+									@php
+										$number1 += 1	
+									@endphp
+								@endif
+
+								@if($number1 == 3)
+									@break
+								@endif
+									
+							@endforeach	
+								
 							</section>
 
 							<p class="text-center"><a href="/mobil_dengan_supir">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
@@ -231,62 +210,43 @@
 
 							<!-- Fleet -->
 							<!-- TANPA SUPIR -->
+							@php
+								$number2 = 0
+							@endphp
 							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/tanpasupir-xpander.jpg" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Xpander</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 400.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
+								@foreach ($car as $cr)
+										@if($cr->status == "Tanpa Driver")
+									<article class="style1">
+										<span class="image">
+											<img src="img_car/{{$cr->img_path}}" alt="image_car" />
+										</span>
+										<a href="/mobil_tanpa_supir" class="scrolly">
+											<h2>{{$cr->name}}</h2>
+											
+											<p>Harga mulai dari: <strong> Rp. {{$cr->price}}</strong> per hari
+											<br>
+												<i class="fa fa-user"></i> {{$cr->isi_penumpang}} &nbsp;&nbsp;
+												<i class="fa fa-sign-out"></i>{{$cr->pintu}} &nbsp;&nbsp;
+												<i class="fa fa-cog"></i> A/M
+											</p>
+											<div class="content">
+												<p>{{$cr->description}}</p>
+											</div>
+										</a>
+									</article>
+									@php
+										$number2 += 1	
+									@endphp
+									
+								@endif
+
+								@if($number2 == 3)
+									@break
+								@endif
+									
+
+							@endforeach	
 								
-								<article class="style2">
-									<span class="image">
-										<img src="images/tanpasupir-ayla.png" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Ayla</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 200.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 4 orang. Terdapat 1 bagasi berukuran kecil. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/tanpasupir-alphard.jpg" alt="" />
-									</span>
-									<a href="#footer" class="scrolly">
-										<h2>Alphard</h2>
-										
-										<p>Harga mulai dari: <strong> Rp. 500.000</strong> per hari
-										<br>
-											<i class="fa fa-user"></i> 6 &nbsp;&nbsp;
-											<i class="fa fa-sign-out"></i> 4 &nbsp;&nbsp;
-											<i class="fa fa-cog"></i> A/M
-										</p>
-										<div class="content">
-											<p>Mobil ini dapat memuat 6 orang. Terdapat 1 bagasi berukuran besar. Tersedia dalam 2 transmisi manual dan automatic.</p>
-										</div>
-									</a>
-								</article>
 							</section>
 
 							<p class="text-center"><a href="/mobil_tanpa_supir">Lihat Lebih Banyak &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
@@ -325,13 +285,13 @@
 								<div class="col-sm-6 text-center">
 									<p class="m-n"><em>"So far bagus bagus aja recommend nih buat yang mau nyewa mobil secara online gini ga ribet"</em></p>
 
-									<p><strong> - JohnThor</strong></p>
+									<p><strong> - Arya Bimo</strong></p>
 								</div>
 
 								<div class="col-sm-6 text-center">
 									<p class="m-n"><em>"Sudah beberapa kali tetap tidak mengecewakan"</em></p>
 
-									<p><strong>- Johnydep</strong> </p>
+									<p><strong>- Faizal Hudya</strong> </p>
 								</div>
 							</div>
 
@@ -361,7 +321,7 @@
 							</section>
 
 							<ul class="copyright">
-								<li>Copyright © 2020 Company Name </li>
+								<li>Copyright © 2020 Rentalin Aja! </li>
 							</ul>
 						</div>
 					</footer>

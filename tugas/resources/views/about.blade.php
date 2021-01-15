@@ -66,7 +66,7 @@
 							</div>
 
 							<p>Rentalin Aja hadir untuk memecahkan permasalahan yang banyak ditemui saat mencari rental mobil di Indonesia seperti harga yang mahal, kesulitan dalam pemesanan.</p>
-							<p>Rentalin Aja merupakan sebuah terobosan dalam industri rental mobil di Indonesia yang bertujuan untuk memudahkan para wisatawan yang singgah di kota-kota di Indonesia untuk mencari moda transportasi. Nemob memungkinkan pelanggan untuk menyewa langsung mobil yang diinginkan secara Real Time tanpa harus menelepon untuk menanyakan ketersediaan kendaraan.</p>
+							<p>Rentalin Aja merupakan sebuah terobosan dalam industri rental mobil di Indonesia yang bertujuan untuk memudahkan para wisatawan yang singgah di kota-kota di Indonesia untuk mencari moda transportasi. Rentalin Aja memungkinkan pelanggan untuk menyewa langsung mobil yang diinginkan secara Real Time tanpa harus menelepon untuk menanyakan ketersediaan kendaraan.</p>
 						</div>
 					</div>
 

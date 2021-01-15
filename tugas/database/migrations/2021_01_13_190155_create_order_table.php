@@ -18,7 +18,7 @@ class CreateOrderTable extends Migration
             $table->string('email', 255);
             $table->string('name', 255);
             $table->string('name_car', 255);
-            $table->text('keterangan', 255);
+            $table->text('alamat', 255);
             $table->date('mulai');
             $table->date('kembali');
             $table->unsignedBigInteger('no_hp')->length(100);

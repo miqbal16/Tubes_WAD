@@ -53,9 +53,6 @@ class HomeController extends Controller
         $harga = $car->price * $day;
         $tahun_kendaraan = $car->tahun;
 
-        if ($date1 > $kembali) {
-            return view('/');
-        }else {
             return view('home',[
                 'name' => $name,
                 'email' => $email,
@@ -70,7 +67,7 @@ class HomeController extends Controller
                 'harga' => $harga,
                 'tahun_kendaraan' => $tahun_kendaraan
             ]);
-        }
+        
 
         
     
@@ -84,7 +81,7 @@ class HomeController extends Controller
         $order->name = $request->name;
         $order->email = $request->email;
         $order->id_car = $request->id_car;
-        $order->keterangan = $request->keterangan;
+        $order->alamat = $request->keterangan;
         $order->mulai = $request->mulai;
         $order->kembali = $request->kembali;
         $order->no_hp = $request->no_hp;
@@ -110,5 +107,7 @@ class HomeController extends Controller
         $order = Order::all();
         return view('admin.history', compact('order'));
     }
+
+   
 
 }

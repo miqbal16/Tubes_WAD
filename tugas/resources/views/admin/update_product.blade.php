@@ -44,11 +44,11 @@
         <h2 class="title" style="text-align:center; font-size: 23px; margin: 30px 0 40px; color: #555555">Update Product</h2>
         <div class="row">
           <div class="col-sm-10" style="margin:auto">
-            <form action="{{url("/car_list/{$car->id}")}}" method="post">
+            <form action="{{url("/car_list/{$car->id}")}}" enctype="multipart/form-data" method="post">
               @method('PATCH')
               {{ csrf_field() }}
                 <div class="form-group">
-                  <label for="disabledTextInput">Product Name</label>
+                  <label for="disabledTextInput">Car Name</label>
                   <input value="{{$car->name}}" type="text" id="disabledTextInput" class="form-control" name="name_product">
                 </div>
 

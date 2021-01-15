@@ -16,6 +16,6 @@ class Order extends Model
     protected $table = 'order';
 
     protected $fillable = [
-        'name','email','id_car','name_car','keterangan','mulai','kembali','no_polisi','no_hp','pembayaran','status_pembayaran','status_car','total, tahun_kendaraan'
+        'name','email','id_car','name_car','alamat','mulai','kembali','no_polisi','no_hp','pembayaran','status_pembayaran','status_car','total, tahun_kendaraan'
     ];
 }

@@ -75,15 +75,12 @@
 							<p>Harga yang tercantum website Rentalin Aja hanya harga untuk penggunaan mobil dalam kota, untuk penggunaan mobil luar kota akan dikenakan biaya tambahan. Harga belum termasuk biaya operasional (Tol, Parkir, Uang Makan Sopir dan lain-lain).</p>
 
 							<h2 class="m-n"><i class="fa fa-question-circle"></i> Apakah Menyewa Mobil di Rentalin Aja Dapat Menyewa Mobil Lepas Kunci (Tanpa Driver) ?</h2>
-							<p>Ya, Rentalin Aja ingin menjawab semua kebutuhan Anda dalam keperluan sewa mobil, untuk menyewa mobil lepas kunci Anda diharuskan melengkapi prosedur yang telah ditentukan oleh Nemob yaitu: 
+							<p>Ya, Rentalin Aja ingin menjawab semua kebutuhan Anda dalam keperluan sewa mobil, untuk menyewa mobil lepas kunci Anda diharuskan melengkapi prosedur yang telah ditentukan oleh Rentalin Aja yaitu: 
 							   <br>
-							   Anda bersedia untuk dilakukan survey dan melengkapi persyaratan lepas kunci (Foto Copy KTP, SIM, Kartu Keluarga, Rekening Listrik/Telp, Kartu Kredit dan NPWP, ) dan akan dikenakan biaya survey. Minimal pemesanan dan penyewaan mobil lepas kunci adalah 3 hari.</p>
+							   Anda bersedia untuk dilakukan survey dan melengkapi persyaratan lepas kunci (Foto Copy KTP, SIM, Kartu Keluarga, Rekening Listrik/Telp, Kartu Kredit dan NPWP, ) dan akan dikenakan biaya survey.</p>
 
 							<h2 class="m-n"><i class="fa fa-question-circle"></i> Bagaimana Jika Saya Menggunakan Mobil Yang Di Sewa Melebihi Durasi Yang Seharusnya ?</h2>
 							<p>Anda akan dikenakan biaya overtime sesuai dengan durasi yang telah Anda gunakan biaya overtime adalah 10% dari harga sewa harian dan maksimal overtime adalah 3 jam, apabila melewati 3 jam akan dikenakan biaya sewa full day.</p>
-
-							<h2 class="m-n"><i class="fa fa-question-circle"></i> Bagaimana dengan Biaya Sewa yang Telah Dilakukan Jika Saya Membatalkan Pesanan ?</h2>
-							<p>Tidak ada pengembalian dana untuk pembatalan sewa kendaraan</p>
 							</div>
 					</div>
 

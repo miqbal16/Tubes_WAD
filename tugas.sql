@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2021 at 02:18 PM
+-- Generation Time: Jan 15, 2021 at 04:32 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -45,8 +45,16 @@ CREATE TABLE `car_list` (
 --
 
 INSERT INTO `car_list` (`id`, `name`, `price`, `description`, `isi_penumpang`, `pintu`, `img_path`, `status`, `no_polisi`, `tahun`) VALUES
-(1, 'Pajero Dakar', 1000000, 'dwadwadawdwa', 5, 4, NULL, 'Tanpa Driver', 'B1111AD', 2018),
-(2, 'Avanza', 1300000, 'dwadawdawdwad', 5, 4, NULL, 'Pakai Driver', 'D4120DD', 2014);
+(17, 'Honda CRV 2017', 650000, 'Mobil yang memiliki ruang yang cukup luas sehingga mobil dapat mengangkut 5 orang serta mobil juga tersedia bagasi yang sangat luas sehingga anda bisa membawa barang yang begitu banyak', 5, 4, '1610678577.jpg', 'Tanpa Driver', 'B4412FF', 2017),
+(18, 'Nissan Grand Livina 2018', 500000, 'Mobil yang memiliki ruang yang cukup luas sehingga mobil dapat mengangkut 4 orang serta mobil juga tersedia bagasi yang sangat luas sehingga anda bisa membawa barang yang begitu banyak', 4, 4, '1610678737.jpg', 'Tanpa Driver', 'D1298CC', 2018),
+(19, 'Honda Civic 2016', 500000, 'Mobil yang memiliki ruang yang cukup luas sehingga mobil dapat mengangkut 4 orang serta mobil juga tersedia bagasi yang cukup luas', 4, 4, '1610678872.jpg', 'Tanpa Driver', 'D1327DC', 2016),
+(20, 'Toyota Camry 2017', 700000, 'Mobil sedan yang memiliki ruang yang cukup luas sehingga mobil dapat mengangkut 5 orang serta mobil juga tersedia bagasi yang sangat luas', 5, 4, '1610678974.png', 'Tanpa Driver', 'B5120AA', 2017),
+(21, 'Toyota Fortuner 2018', 650000, 'Mobil SUV yang memiliki ruang yang sangat luas sehingga mobil dapat mengangkut 6 orang serta mobil juga tersedia bagasi yang sangat luas', 6, 4, '1610679299.jpg', 'Tanpa Driver', 'D7856TT', 2018),
+(22, 'Toyota Alphard Silver 2019', 1500000, 'Mobil Minibus tampilan luxury yang memiliki ruang yang sangat luas sehingga mobil dapat mengangkut 6 orang serta mobil juga tersedia bagasi yang sangat luas', 6, 4, '1610679608.jpg', 'Pakai Driver', 'B7770AC', 2016),
+(23, 'Mitsubishi Xpander 2018', 1300000, 'Mobil SUV tampilan luxury yang memiliki ruang yang sangat luas sehingga mobil dapat mengangkut 6 orang serta mobil juga tersedia bagasi yang sangat luas', 6, 4, '1610679760.jpg', 'Pakai Driver', 'D4100RT', 2018),
+(24, 'Daihatsu Ayla 2017', 1000000, 'Mobil Mini sedan yang memiliki ruang yang cukup luas sehingga mobil dapat mengangkut 4 orang serta mobil juga tersedia bagasi yang cukup luas', 4, 4, '1610680087.png', 'Pakai Driver', 'B8912AA', 2017),
+(25, 'Mitsubishi Pajero Sport 2019', 1250000, 'Mobil SUV tampilan sport yang memiliki ruang yang sangat luas sehingga mobil dapat mengangkut 6 orang serta mobil juga tersedia bagasi yang sangat luas', 6, 4, '1610680244.jpg', 'Pakai Driver', 'B1190YT', 2019),
+(26, 'Honda HRV 2018', 1100000, 'Mobil SUV tampilan luxury yang memiliki ruang yang sangat luas sehingga mobil dapat mengangkut 5 orang serta mobil juga tersedia bagasi yang sangat luas', 5, 4, '1610680369.jpg', 'Tanpa Driver', 'D3109AG', 2018);
 
 -- --------------------------------------------------------
 
@@ -81,12 +89,12 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(61, '2014_10_12_000000_create_users_table', 1),
-(62, '2014_10_12_100000_create_password_resets_table', 1),
-(63, '2019_08_19_000000_create_failed_jobs_table', 1),
-(64, '2021_01_12_055652_create_car_list_table', 1),
-(65, '2021_01_12_111113_create_ulasan_table', 1),
-(66, '2021_01_13_190155_create_order_table', 1);
+(73, '2014_10_12_000000_create_users_table', 1),
+(74, '2014_10_12_100000_create_password_resets_table', 1),
+(75, '2019_08_19_000000_create_failed_jobs_table', 1),
+(76, '2021_01_12_055652_create_car_list_table', 1),
+(77, '2021_01_12_111113_create_ulasan_table', 1),
+(78, '2021_01_13_190155_create_order_table', 1);
 
 -- --------------------------------------------------------
 
@@ -99,7 +107,7 @@ CREATE TABLE `order` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name_car` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `keterangan` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `alamat` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `mulai` date NOT NULL,
   `kembali` date NOT NULL,
   `no_hp` bigint(20) UNSIGNED NOT NULL,
@@ -118,13 +126,10 @@ CREATE TABLE `order` (
 -- Dumping data for table `order`
 --
 
-INSERT INTO `order` (`id`, `email`, `name`, `name_car`, `keterangan`, `mulai`, `kembali`, `no_hp`, `id_car`, `pembayaran`, `status_pembayaran`, `no_polisi`, `status_car`, `total`, `tahun_kendaraan`, `created_at`, `updated_at`) VALUES
-(1, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdawdwadwadawdda', '2020-02-12', '2020-02-15', 85316269505, 1, 'BCA (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 3000000, 2018, NULL, NULL),
-(2, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwaddawdawdwa', '2020-05-12', '2020-05-17', 81288591789, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 6500000, 2014, NULL, NULL),
-(3, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdwadawdwa', '2020-02-14', '2020-02-16', 85316269505, 1, 'Mandiri (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 2000000, 2018, NULL, NULL),
-(4, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Pajero Dakar', 'dawdwadawdwa', '2020-02-14', '2020-02-16', 85316269505, 1, 'Mandiri (Transfer)', 'Belum Bayar', 'B1111AD', 'Tanpa Driver', 2000000, 2018, NULL, NULL),
-(5, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwadwadwadwadwadawdawd', '2020-06-14', '2020-06-18', 85316269505, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 5200000, 2014, NULL, NULL),
-(6, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'Avanza', 'dwadwadwadwadwadawdawd', '2020-06-14', '2020-06-18', 85316269505, 2, 'Bayar Tunai', 'Belum Bayar', 'D4120DD', 'Pakai Driver', 5200000, 2014, NULL, NULL);
+INSERT INTO `order` (`id`, `email`, `name`, `name_car`, `alamat`, `mulai`, `kembali`, `no_hp`, `id_car`, `pembayaran`, `status_pembayaran`, `no_polisi`, `status_car`, `total`, `tahun_kendaraan`, `created_at`, `updated_at`) VALUES
+(8, 'iqbal@gmail.com', 'Muhammad Iqbal', 'Mitsubishi Pajero Sport 2019', 'Jl. Telekomunikasi No. 134 Bojongsoang', '2021-01-16', '2021-01-17', 85316269505, 25, 'Mandiri (Transfer)', 'Belum Bayar', 'B1190YT', 'Pakai Driver', 1250000, 2019, NULL, NULL),
+(9, 'joe@gmail.com', 'Joe', 'Honda Civic 2016', 'Jl. Ciganitri No. 87 Bojosoang', '2021-01-20', '2021-01-22', 81288591789, 19, 'Bayar Tunai', 'Belum Bayar', 'D1327DC', 'Tanpa Driver', 1000000, 2016, NULL, NULL),
+(10, 'bob1@gmail.com', 'Bob', 'Toyota Alphard Silver 2019', 'Jl. Soekarno Hatta No. 34 Kota Bandung', '2021-01-16', '2021-01-17', 8977654321, 22, 'BRI (Transfer)', 'Belum Bayar', 'B7770AC', 'Pakai Driver', 1500000, 2016, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -158,7 +163,9 @@ CREATE TABLE `ulasan` (
 --
 
 INSERT INTO `ulasan` (`id`, `email`, `name`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'miqbaal1605@gmail.com', 'Muhammad Iqbal', 'dwadawd', NULL, NULL);
+(7, 'bob1@gmail.com', 'Bob', 'Rental Mobil Harga Murah hanya ada di Rentalin Aja!, Mobil berkualitas dan terawat', NULL, NULL),
+(8, 'iqbal@gmail.com', 'Muhammad Iqbal', 'Mobil nyaman, bersih serta terawat yang lebih menariknya lagi harga terjangkau', NULL, NULL),
+(9, 'joe@gmail.com', 'Joe', 'Suka dengan kantornya yang bersih dan  sejuk juga driver juga ramah dan baik', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -182,8 +189,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@example.com', NULL, '$2y$10$oxoni4sWFWU0tsBblIlD9On/rD3wSqvMlIKyuCd6X106DrCHcwj9W', NULL, '2021-01-14 00:35:15', '2021-01-14 00:35:15'),
-(2, 'Muhammad Iqbal', 'miqbaal1605@gmail.com', NULL, '$2y$10$YHuVMKhOKCZNqv9oA1XXWOjRlUEx9zkHFyi7xhsL4qiKEaCCreRvu', NULL, '2021-01-14 00:36:27', '2021-01-14 00:36:27');
+(1, 'Muhammad Iqbal', 'miqbaal1605@gmail.com', NULL, '$2y$10$fg7Isd8YpASWb/xxWllmjefzIo4uiB9Q215ArjkKZF1n1qkigVK/e', NULL, '2021-01-14 07:55:36', '2021-01-14 07:55:36'),
+(2, 'admin', 'admin@example.com', NULL, '$2y$10$v2oGf90KRKFifn5ubsLBlOjJC48aVCanwyqubU2BygnIcBW72MBZW', NULL, '2021-01-14 08:02:11', '2021-01-14 08:02:11'),
+(3, 'Bob', 'bob@gmail.com', NULL, '$2y$10$HBRgT91g/LbC.LioLikN2usyEb4C16JdNaVFlXL1IYNMofreDca3W', NULL, '2021-01-14 16:27:03', '2021-01-14 16:27:03'),
+(4, 'Muhammad Iqbal', 'iqbal@gmail.com', NULL, '$2y$10$VUls9hGbaPJTFnsXHOP3XOgSxZ5/95o8xEVK2w4T.lJVPcqOhtH/y', NULL, '2021-01-14 18:07:43', '2021-01-14 18:07:43'),
+(5, 'Bob', 'bob1@gmail.com', NULL, '$2y$10$IKPMUVCyrXHiEu8c6485sOYWS8.Atg6Rf7Rfe.5bJwZVjzVh7f6v6', NULL, '2021-01-14 20:17:41', '2021-01-14 20:17:41'),
+(6, 'Joe', 'joe@gmail.com', NULL, '$2y$10$e/0nfZQjHf91AiCytnai4.0sEBzYW71iuLn3oRLQ/OEzpi8k8TNB6', NULL, '2021-01-14 20:20:34', '2021-01-14 20:20:34');
 
 --
 -- Indexes for dumped tables
@@ -242,7 +253,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `car_list`
 --
 ALTER TABLE `car_list`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -254,25 +265,25 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `ulasan`
 --
 ALTER TABLE `ulasan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

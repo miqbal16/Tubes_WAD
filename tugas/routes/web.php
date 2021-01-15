@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\index::class, 'index'])->name('index.index');
+Route::get('/', [App\Http\Controllers\index::class, 'carHome'])->name('index.index');
 
 // menu costumer
 
@@ -75,7 +75,7 @@ Route::view('/pembayaran/success', 'bayar_ditempat')->name('tunai');
 Route::post('/pembayaran/proses', '\App\Http\Controllers\HomeController@saveDataOrder')->name('dataOrder');
 Route::get('ulasan','\App\Http\Controllers\UlasanController@index')->name('ulasan.page');
 Route::post('ulasan/delete','\App\Http\Controllers\UlasanController@delete')->name('ulasan.delete');
-
+Route::get('ulasan/ulasan_terkirim','\App\Http\Controllers\UlasanController@ulasanSuccess')->name('ulasan.terkirim');
 Route::get('/order/{id}/ProsesOrder', '\App\Http\Controllers\OrderController@prosesOrder')->name('order.proses.page');
 Route::post('/order/buy', '\App\Http\Controllers\OrderController@buy')->name('order.success');
 Route::get('/history', '\App\Http\Controllers\HomeController@ListOrder')->name('history.page');
@@ -84,7 +84,7 @@ Route::post('/register/add','\App\Http\Controllers\authcontroller@register')->na
 Route::get('/index', '\App\Http\Controllers\authcontroller@halamanutama')->name('halamanutama.index');
 Route::get('/register', '\App\Http\Controllers\authcontroller@halamanregister')->name('halamanregister.register');
 Route::get('/login', '\App\Http\Controllers\authcontroller@halamanlogin')->name('halamanlogin.login');
-
+Route::post('history/ubah', '\App\Http\Controllers\HomeController@ubahPembayaran')->name('history.ubah');
 
 // -------
 
